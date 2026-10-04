@@ -4,331 +4,146 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>YRA’EAT — Food • Catering • Events</title>
-<meta name="description" content="YRA’EAT: cucina senegalese e dell’Africa occidentale, catering ed eventi. Fataya, Nems, Bissap, Ginger, Thieboudienne e formule su misura.">
+<meta name="description" content="YRA’EAT porta la cucina senegalese negli eventi: piatti signature, aperitivi, catering e Teranga.">
 <meta name="theme-color" content="#BF0F1E">
-<link rel="icon" type="image/webp" href="assets/logo-originale-yraeat.webp?v=6">
+<link rel="icon" type="image/webp" href="assets/logo-originale-yraeat.webp?v=7">
 <style>
-:root{
-  --b:#BF0F1E;--b2:#8D0A15;--r:#DD1324;--g:#E7B307;--y:#FFC300;
-  --cream:#FFF9F2;--paper:#FFFFFF;--ink:#17110F;--muted:#74675F;--line:#EADFD5;
-  --max:1180px;--shadow:0 24px 70px rgba(47,20,13,.14)
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
-.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
-.serif,h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
-.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.20em;text-transform:uppercase;color:var(--b)}
-h2{font-size:clamp(2.25rem,5vw,4.1rem);line-height:1;letter-spacing:-.03em;margin:8px 0 0}
-p{margin:0}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;border:1px solid var(--ink);font-size:.76rem;font-weight:800;letter-spacing:.055em;text-transform:uppercase;transition:.2s ease}
-.btn:hover{transform:translateY(-1px)}
-.btn.primary{background:var(--b);border-color:var(--b);color:#fff}
-.btn.light{border-color:#fff;color:#fff}
-.btn.gold{background:var(--g);border-color:var(--g);color:#21120e}
-header{position:sticky;top:0;z-index:50;background:rgba(255,249,242,.95);backdrop-filter:blur(13px);border-bottom:1px solid rgba(0,0,0,.06)}
-nav{height:80px;display:flex;align-items:center;gap:24px}
-.brand{display:flex;align-items:center;gap:11px;margin-right:auto}
-.brand img{width:72px;height:62px;object-fit:contain}
-.brand-text strong{display:block;color:var(--b);font:700 1.28rem Georgia,serif;letter-spacing:-.03em}
-.brand-text small{display:block;font-size:.55rem;letter-spacing:.16em}
-.navlinks{display:flex;gap:20px;font-size:.82rem;font-weight:700}
-.navlinks a:hover{color:var(--b)}
-.pattern{height:17px;background:linear-gradient(135deg,var(--b) 25%,transparent 25%) 0 0/18px 18px,linear-gradient(225deg,var(--g) 25%,transparent 25%) 0 0/18px 18px,#24100d}
-
-/* HERO */
-.hero{position:relative;min-height:700px;display:flex;align-items:center;overflow:hidden;background:#090706;color:#fff}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center right}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.93) 0%,rgba(0,0,0,.80) 38%,rgba(0,0,0,.45) 66%,rgba(0,0,0,.18) 100%)}
-.hero-inner{position:relative;z-index:2;width:100%}
-.hero-copy{max-width:650px;padding:70px 0}
-.hero h1{font-size:clamp(3.6rem,7vw,6.9rem);line-height:.9;letter-spacing:-.055em;margin:12px 0 22px}
-.hero h1 span{color:var(--g)}
-.hero .lead{font:400 clamp(1.3rem,2.2vw,2rem) Georgia,serif;color:#f4ebe5;max-width:620px}
-.hero .desc{color:#e2d6cf;max-width:600px;margin-top:14px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.hero .btn.light{background:rgba(255,255,255,.03)}
-.hero-stamp{display:flex;gap:18px;flex-wrap:wrap;margin-top:40px;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#f5ece7}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--g);display:inline-block;margin-right:7px}
-
-/* quick categories */
-.quick{position:relative;z-index:5;margin-top:-26px}
-.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--line);gap:1px;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 18px 40px rgba(50,20,14,.10)}
-.quick-card{background:#fff;padding:24px}
-.quick-card b{display:block;color:var(--b);font:700 1.12rem Georgia,serif;margin-bottom:4px}
-.quick-card span{font-size:.86rem;color:var(--muted)}
-section{padding:96px 0}
-.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:38px}
-.section-head p{max-width:600px;color:var(--muted)}
-
-/* categories */
-.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.category{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;min-height:230px;position:relative;overflow:hidden}
-.category:after{content:"";position:absolute;right:-50px;bottom:-50px;width:135px;height:135px;border:18px solid rgba(231,179,7,.11);border-radius:50%}
-.category .num{font:700 3.5rem Georgia,serif;color:rgba(191,15,30,.11)}
-.category h3{font-size:1.35rem;margin:5px 0 8px}
-.category p{color:var(--muted);font-size:.91rem}
-
-/* platters */
-.platters{background:#17110f;color:#fff}.platters-photo{height:390px;border-radius:28px;overflow:hidden;margin-bottom:24px;box-shadow:0 24px 60px rgba(0,0,0,.28)}.platters-photo img{width:100%;height:100%;object-fit:cover}
-.platter-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.platter{border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:26px;background:linear-gradient(145deg,rgba(191,15,30,.13),rgba(231,179,7,.05))}
-.platter h3{font-size:1.6rem;color:var(--g);margin:0 0 12px}
-.platter ul{margin:0;padding-left:20px;color:#d8ccc5}
-.platter li{margin:7px 0}
-.platter .small{margin-top:18px;font-size:.78rem;color:#aa9a91;text-transform:uppercase;letter-spacing:.08em}
-
-/* featured products */
-.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.product{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}
-.product-media{height:220px;background:#2d1712;overflow:hidden}
-.product-media img{width:100%;height:100%;object-fit:cover}
-.product-copy{padding:20px}
-.product-copy h3{font-size:1.28rem;margin:0 0 6px}
-.product-copy p{font-size:.88rem;color:var(--muted)}
-.product-link{display:inline-block;margin-top:13px;color:var(--b);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em}
-
-/* lunch */
-.lunch{background:var(--cream)}
-.lunch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.lunch-card{background:#fff;border-radius:20px;border:1px solid var(--line);padding:0;overflow:hidden;border-top:4px solid var(--b)}.lunch-card img{width:100%;height:190px;object-fit:cover}.lunch-card .lunch-copy{padding:20px 22px}
-.lunch-card b{font:700 1.15rem Georgia,serif;display:block;margin-bottom:6px}
-.lunch-card span{font-size:.87rem;color:var(--muted)}
-
-/* catering */
-.catering-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:52px;align-items:center}
-.catering-visual{min-height:500px;border-radius:32px;position:relative;overflow:hidden;background:#1b0d0a;box-shadow:var(--shadow)}.catering-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.catering-visual:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.05) 25%,rgba(0,0,0,.72) 100%)}
-.catering-visual .inside{position:absolute;z-index:2;left:28px;right:28px;bottom:28px;color:#fff}
-.catering-visual b{display:block;color:var(--g);font:700 2.7rem Georgia,serif;line-height:1}
-.offer-list{display:grid;gap:12px;margin-top:25px}
-.offer{padding:17px 0;border-bottom:1px solid var(--line)}
-.offer b{display:block;font:700 1.05rem Georgia,serif}
-.offer span{font-size:.9rem;color:var(--muted)}
-
-/* founders */
-.founders{background:#fff}
-.founder-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}
-.logo-panel{border:1px solid var(--line);border-radius:32px;padding:28px;background:#fff;box-shadow:0 18px 45px rgba(55,23,16,.07)}
-.logo-panel img{width:100%;object-fit:contain}
-.names{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:23px}
-.name{padding:18px;border:1px solid var(--line);border-radius:17px;text-align:center}
-.name b{display:block;color:var(--b);font:700 1.25rem Georgia,serif}
-
-/* events */
-.events{background:#efe6dc}
-.event-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px}
-.event{background:#fff;border-radius:18px;padding:21px 17px;border-top:4px solid var(--b)}
-.event b{display:block;font-family:Georgia,serif;margin-bottom:6px}
-.event span{font-size:.85rem;color:var(--muted)}
-
-/* CTA */
-.cta{background:linear-gradient(120deg,var(--b2),var(--b));color:#fff;padding:78px 0}
-.cta-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
-.cta p{color:#f2dcde;margin-top:13px;max-width:680px}
-.cta .btn{border-color:#fff;color:#fff}
-
-footer{background:#0f0b0a;color:#fff;padding:48px 0}
-.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:30px}
-.footer-logo{width:150px;background:#fff;border-radius:16px;padding:5px;margin-bottom:10px}
-footer p,footer a{color:#cdbfb7;font-size:.87rem}
-footer h4{font-family:Georgia,serif;margin:0 0 10px}
-.note{margin-top:30px;padding-top:18px;border-top:1px solid #392f2a;color:#8f8078;font-size:.72rem}
-
-.mobile-cta{display:none}
-@media(max-width:950px){
-  .navlinks{display:none}
-  .quick-grid,.categories,.products{grid-template-columns:1fr 1fr}
-  .platter-grid,.catering-grid,.founder-grid,.cta-grid{grid-template-columns:1fr}
-  .lunch-grid,.event-grid{grid-template-columns:1fr 1fr}
-  .footer-grid{grid-template-columns:1fr}
-  .catering-visual{min-height:360px}
-}
-@media(max-width:620px){
-  .wrap{width:min(var(--max),calc(100% - 26px))}
-  nav{height:70px}.brand img{width:56px;height:49px}.brand-text strong{font-size:1.05rem}.brand-text small{font-size:.49rem}nav>.btn{display:none}
-  .hero{min-height:660px}.hero-bg{object-position:64% center}.hero-copy{padding:60px 0}.hero h1{font-size:3.65rem}
-  .quick-grid,.categories,.products,.platter-grid,.lunch-grid,.event-grid,.names{grid-template-columns:1fr}
-  section{padding:72px 0}.section-head{display:block}.section-head p{margin-top:14px}
-  .mobile-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:var(--b);color:#fff;border-radius:999px;padding:14px 18px;justify-content:center;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.055em;box-shadow:0 16px 38px rgba(0,0,0,.25)}
-}
+:root{--b:#A90D1A;--b2:#720812;--g:#E7B307;--ink:#17110F;--cream:#FFF9F2;--paper:#fff;--muted:#6F625B;--line:#EADFD6;--max:1180px;--shadow:0 22px 55px rgba(46,18,12,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}.serif,h1,h2,h3{font-family:Georgia,"Times New Roman",serif}.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase;color:var(--b)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:8px;font-size:.77rem;font-weight:800;letter-spacing:.04em;border:1px solid transparent;text-transform:uppercase;transition:.2s}.btn:hover{transform:translateY(-1px)}.btn.primary{background:var(--b);color:#fff}.btn.outline{border-color:rgba(255,255,255,.75);color:#fff;background:rgba(0,0,0,.05)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #eee}nav{height:82px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:10px;margin-right:auto}.brand img{width:88px;height:64px;object-fit:contain}.brand strong{font:700 1.25rem Georgia,serif;color:var(--b);display:block}.brand small{font-size:.52rem;letter-spacing:.13em}.navlinks{display:flex;gap:22px;font-weight:700;font-size:.82rem}.navlinks a:hover{color:var(--b)}
+.hero{position:relative;min-height:710px;color:#fff;display:flex;align-items:center;overflow:hidden;background:#140c09}.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.90) 0%,rgba(0,0,0,.76) 40%,rgba(0,0,0,.28) 72%,rgba(0,0,0,.10) 100%)}.hero-inner{position:relative;z-index:2}.hero-copy{max-width:700px;padding:80px 0}.hero h1{font-size:clamp(3.6rem,7vw,6.6rem);line-height:.92;letter-spacing:-.045em;margin:12px 0 20px}.hero h1 span{color:var(--g)}.hero .lead{font:400 clamp(1.25rem,2vw,1.8rem) Georgia,serif;max-width:650px;color:#f6eee8}.hero p{max-width:600px;color:#eaded6}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-proof{display:flex;gap:24px;flex-wrap:wrap;margin-top:42px;font-size:.78rem;font-weight:700}.hero-proof span:before{content:"✦";color:var(--g);margin-right:8px}
+section{padding:92px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 38px}.section-head h2{font-size:clamp(2.3rem,5vw,4rem);line-height:1;letter-spacing:-.03em;margin:8px 0 12px}.section-head h2 span{color:var(--b)}.section-head p{color:var(--muted)}
+.signature{background:#fff}.dish-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.dish{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 28px rgba(38,15,10,.07)}.dish-media{height:245px;overflow:hidden;background:#27130f}.dish-media img{width:100%;height:100%;object-fit:cover}.dish-copy{padding:18px 18px 20px}.dish-copy h3{font-size:1.25rem;color:var(--b);margin:0 0 7px}.dish-copy p{font-size:.88rem;color:var(--muted)}
+.catering{background:linear-gradient(90deg,#fff 0%,#fff 45%,#f9f1e8 45%,#f9f1e8 100%)}.split{display:grid;grid-template-columns:.9fr 1.1fr;align-items:stretch;min-height:510px;box-shadow:var(--shadow);border-radius:24px;overflow:hidden;background:#fff}.split-copy{padding:56px}.split-copy h2{font-size:clamp(2.5rem,4.5vw,4rem);line-height:1;margin:9px 0 16px}.split-copy p{color:var(--muted)}.icons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}.mini{font-size:.83rem}.mini b{display:block;color:var(--b);font-size:1.1rem;margin-bottom:4px}.split-image{min-height:510px}.split-image img{width:100%;height:100%;object-fit:cover}
+.aperitif{background:#fff}.aperitif-split{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:54px}.aperitif-photo{border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}.aperitif-photo img{width:100%;height:500px;object-fit:cover}.aperitif-copy h2{font-size:clamp(2.4rem,4.5vw,3.9rem);line-height:1;margin:8px 0 16px}.aperitif-copy p{color:var(--muted)}.checks{display:grid;gap:11px;margin:24px 0}.checks span:before{content:"✓";color:var(--g);font-weight:900;margin-right:10px}
+.about{background:#F5EEE7}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}.about-copy h2{font-size:clamp(2.4rem,4.5vw,3.9rem);line-height:1;margin:8px 0 16px}.about-copy p{color:var(--muted)}.quote{margin-top:25px;padding-left:18px;border-left:4px solid var(--g);font:italic 1.2rem Georgia,serif}.logo-panel{background:#fff;border-radius:24px;padding:36px;box-shadow:var(--shadow)}.logo-panel img{width:100%;max-width:430px;margin:auto;object-fit:contain}
+.contact{background:linear-gradient(120deg,#57070C,#A90D1A);color:#fff}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start}.contact h2{font-size:clamp(2.5rem,5vw,4rem);line-height:1;margin:8px 0 14px}.contact p{color:#f2dfe1}.contact-card{background:#fff;color:var(--ink);padding:24px;border-radius:18px}.contact-card input,.contact-card textarea,.contact-card select{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:8px;margin-bottom:12px;font:inherit}.contact-card textarea{min-height:115px}.contact-card button{width:100%;border:0;cursor:pointer}
+footer{background:#0E0B0A;color:#fff;padding:38px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand img{width:100px;background:#fff;border-radius:10px;padding:4px}.footer-row small{color:#a99c95}.mobile-cta{display:none}
+@media(max-width:950px){.navlinks{display:none}.dish-grid{grid-template-columns:1fr 1fr}.split,.aperitif-split,.about-grid,.contact-grid{grid-template-columns:1fr}.catering{background:#fff}.split-image{min-height:380px}.aperitif-photo img{height:390px}.split-copy{padding:38px}}
+@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 24px))}nav{height:70px}.brand img{width:64px;height:48px}.brand strong{font-size:1.05rem}.brand small{font-size:.46rem}nav>.btn{display:none}.hero{min-height:650px}.hero>img{object-position:62% center}.hero-copy{padding:58px 0}.hero h1{font-size:3.5rem}.dish-grid{grid-template-columns:1fr}.dish-media{height:260px}.icons{grid-template-columns:1fr}.split-copy{padding:30px 24px}.aperitif-photo img{height:320px}.mobile-cta{display:flex;position:fixed;bottom:12px;left:12px;right:12px;z-index:70;background:var(--b);color:#fff;padding:14px 18px;border-radius:999px;justify-content:center;font-weight:800;text-transform:uppercase;font-size:.78rem;box-shadow:0 15px 35px rgba(0,0,0,.25)}}
 </style>
 </head>
 <body>
 <header>
   <nav class="wrap">
     <a class="brand" href="#home">
-      <img src="assets/logo-originale-yraeat.webp?v=6" alt="Logo YRA’EAT">
-      <span class="brand-text"><strong>YRA’EAT</strong><small>FOOD • CATERING • EVENTS</small></span>
+      <img src="assets/logo-originale-yraeat.webp?v=7" alt="YRA’EAT">
+      <span><strong>YRA’EAT</strong><small>FOOD • CATERING • EVENTS</small></span>
     </a>
     <div class="navlinks">
-      <a href="#prodotti">Prodotti</a>
-      <a href="#plateaux">Plateaux</a>
       <a href="#menu">Menu</a>
       <a href="#catering">Catering</a>
-      <a href="#chi-siamo">Chi siamo</a>
-      <a href="#contatti">Contatti</a>
+      <a href="#events">Events</a>
+      <a href="#about">Chi siamo</a>
+      <a href="#contact">Contatti</a>
     </div>
-    <a class="btn primary" href="#contatti">Richiedi un preventivo</a>
+    <a class="btn primary" href="#contact">Richiedi un preventivo</a>
   </nav>
 </header>
-<div class="pattern"></div>
 
 <main>
 <section class="hero" id="home">
-  <img class="hero-bg" src="assets/thieboudienne.webp?v=6" alt="Thieboudienne senegalese">
+  <img src="assets/thieboudienne.webp?v=7" alt="Thieboudienne senegalese">
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <div class="eyebrow" style="color:var(--g)">Benvenuti da YRA’EAT</div>
-      <h1>Il Senegal, servito con <span>Teranga.</span></h1>
-      <p class="lead">Aperitivi, piatti, bevande naturali e catering per momenti da condividere.</p>
-      <p class="desc">Una proposta contemporanea ispirata alla cucina senegalese e dell’Africa occidentale, creata da Yaye, Rama e Anta.</p>
+      <div class="eyebrow" style="color:var(--g)">Cucina senegalese • Catering • Events</div>
+      <h1>Sapori senegalesi <span>per i tuoi eventi.</span></h1>
+      <p class="lead">Piatti generosi, autentici e curati per trasformare ogni tavola in un’esperienza.</p>
+      <p>YRA’EAT porta la Teranga in matrimoni, compleanni, battesimi, eventi aziendali, festival e momenti privati.</p>
       <div class="hero-actions">
-        <a class="btn gold" href="#prodotti">Scopri i prodotti</a>
-        <a class="btn light" href="#catering">Servizio catering</a>
+        <a class="btn primary" href="#menu">Scopri il menu</a>
+        <a class="btn outline" href="#contact">Richiedi un preventivo</a>
       </div>
-      <div class="hero-stamp">
-        <span><i class="dot"></i>Food</span><span><i class="dot"></i>Catering</span><span><i class="dot"></i>Events</span>
-      </div>
+      <div class="hero-proof"><span>Cucina autentica</span><span>Servizio su misura</span><span>Per ogni occasione</span></div>
     </div>
   </div>
 </section>
 
-<div class="quick"><div class="wrap quick-grid">
-  <div class="quick-card"><b>Aperitivi</b><span>Fataya, Nems, Beignets e finger food.</span></div>
-  <div class="quick-card"><b>Bevande naturali</b><span>Bissap e Ginger.</span></div>
-  <div class="quick-card"><b>Servizio Catering</b><span>Buffet e formule per eventi.</span></div>
-  <div class="quick-card"><b>Piatti</b><span>Thieboudienne, Yassa, Mafé e altro.</span></div>
-</div></div>
-
-<section id="prodotti">
+<section class="signature" id="menu">
   <div class="wrap">
     <div class="section-head">
-      <div><div class="eyebrow">Categorie</div><h2>Una proposta semplice da scegliere.</h2></div>
-      <p>Come in una boutique gastronomica: trovi subito ciò che ti serve per un aperitivo, un pranzo, un buffet o un evento.</p>
+      <div class="eyebrow">I nostri piatti signature</div>
+      <h2>Il Senegal <span>in tavola.</span></h2>
+      <p>Quattro piatti che raccontano la nostra cucina. Nessun prezzo fisso: ogni proposta viene adattata all’evento e al numero di ospiti.</p>
     </div>
-    <div class="categories">
-      <article class="category"><div class="num">01</div><h3>Aperitivi</h3><p>Finger food senegalese per cocktail, feste e momenti di condivisione.</p></article>
-      <article class="category"><div class="num">02</div><h3>Bevande</h3><p>Bissap e Ginger per completare buffet, brunch ed eventi.</p></article>
-      <article class="category"><div class="num">03</div><h3>Piatti</h3><p>Ricette senegalesi per pranzi, cene e grandi tavole.</p></article>
-      <article class="category"><div class="num">04</div><h3>Catering</h3><p>Servizio su misura per privati, aziende, associazioni e festival.</p></article>
+    <div class="dish-grid">
+      <article class="dish"><div class="dish-media"><img src="assets/maffe.webp?v=7" alt="Maffé"></div><div class="dish-copy"><h3>Maffé</h3><p>Carne e verdure in una salsa ricca alle arachidi, servita con riso.</p></div></article>
+      <article class="dish"><div class="dish-media"><img src="assets/thiebou-guinar.webp?v=7" alt="Thiebou Guinar"></div><div class="dish-copy"><h3>Thiebou Guinar</h3><p>Riso speziato con pollo, verdure, olive e uova.</p></div></article>
+      <article class="dish"><div class="dish-media"><img src="assets/thieboudienne.webp?v=7" alt="Thieboudienne"></div><div class="dish-copy"><h3>Thieboudienne</h3><p>Riso, pesce e verdure: un grande classico della tavola senegalese.</p></div></article>
+      <article class="dish"><div class="dish-media"><img src="assets/yassa.webp?v=7" alt="Yassa Poulet"></div><div class="dish-copy"><h3>Yassa Poulet</h3><p>Pollo marinato con cipolle e olive, accompagnato da riso.</p></div></article>
     </div>
   </div>
 </section>
 
-<section class="platters" id="plateaux">
+<section class="catering" id="catering">
   <div class="wrap">
-    <div class="section-head">
-      <div><div class="eyebrow" style="color:var(--g)">I nostri plateaux salati</div><h2>Combinazioni pensate per condividere.</h2></div>
-      <p>Qui non mostriamo prezzi: ogni plateau può essere adattato al numero di ospiti e al tipo di evento.</p>
-    </div>
-    <div class="platters-photo"><img src="assets/aperitifs.webp?v=6" alt="Assortimento YRA’EAT di Fataya, Beignets e Nems"></div><div class="platter-grid">
-      <article class="platter"><h3>Plateau Teranga</h3><ul><li>Fataya</li><li>Nems</li><li>Beignets salati</li><li>Brochettes di pollo</li><li>Salse di accompagnamento</li></ul><div class="small">Composizione personalizzabile</div></article>
-      <article class="platter"><h3>Plateau Dakar</h3><ul><li>Pastels di pesce</li><li>Nems</li><li>Fataya</li><li>Mini brochettes</li><li>Finger food del giorno</li></ul><div class="small">Composizione personalizzabile</div></article>
-      <article class="platter"><h3>Plateau YRA</h3><ul><li>Assortimento di Fataya</li><li>Nems</li><li>Beignets</li><li>Brochettes</li><li>Bissap o Ginger su richiesta</li></ul><div class="small">Ideale per feste e ricevimenti</div></article>
-      <article class="platter"><h3>Plateau Cocktail</h3><ul><li>Finger food misto</li><li>Piccole bouchées</li><li>Assaggi salati</li><li>Beignets</li><li>Bevande naturali su richiesta</li></ul><div class="small">Per aperitivi e networking</div></article>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <div><div class="eyebrow">Prodotti phares</div><h2>I sapori che rappresentano YRA’EAT.</h2></div>
-      <p>Una selezione breve e chiara, pensata per far conoscere subito la nostra identità gastronomica.</p>
-    </div>
-    <div class="products">
-      <article class="product"><div class="product-media"><img src="assets/maffe.webp?v=6" alt="Maffé senegalese"></div><div class="product-copy"><h3>Maffé</h3><p>Carne e verdure in una salsa ricca alle arachidi, servita con riso.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
-      <article class="product"><div class="product-media"><img src="assets/thiebou-guinar.webp?v=6" alt="Thiebou Guinar"></div><div class="product-copy"><h3>Thiebou Guinar</h3><p>Riso con pollo, verdure, olive e uova: questa è la foto corretta scelta da YRA’EAT.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
-      <article class="product"><div class="product-media"><img src="assets/thieboudienne.webp?v=6" alt="Thieboudienne"></div><div class="product-copy"><h3>Thieboudienne</h3><p>Riso, pesce e verdure: uno dei grandi piatti della tavola senegalese.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
-      <article class="product"><div class="product-media"><img src="assets/yassa.webp?v=6" alt="Yassa Poulet"></div><div class="product-copy"><h3>Yassa Poulet</h3><p>Pollo marinato con cipolle e olive, accompagnato da riso.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="lunch" id="menu">
-  <div class="wrap">
-    <div class="eyebrow">Menu pranzo</div>
-    <h2>I grandi classici del Senegal.</h2>
-    <div class="lunch-grid">
-      <div class="lunch-card"><img src="assets/thieboudienne.webp?v=6" alt="Thieboudienne"><div class="lunch-copy"><b>Thieboudienne</b><span>Riso, pesce e verdure.</span></div></div>
-      <div class="lunch-card"><img src="assets/yassa.webp?v=6" alt="Yassa Poulet"><div class="lunch-copy"><b>Yassa Poulet</b><span>Pollo marinato con cipolle e olive, servito con riso.</span></div></div>
-      <div class="lunch-card"><img src="assets/maffe.webp?v=6" alt="Maffé"><div class="lunch-copy"><b>Maffé</b><span>Salsa alle arachidi, carne e verdure con riso.</span></div></div>
-      <div class="lunch-card"><b>Thiebou Yapp</b><span>Riso e carne per un pasto generoso.</span></div>
-      <div class="lunch-card"><img src="assets/thiebou-guinar.webp?v=6" alt="Thiebou Guinar con pollo, riso, verdure, olive e uova"><div class="lunch-copy"><b>Thiebou Guinar</b><span>Riso e pollo con verdure, olive e uova.</span></div></div>
-      <div class="lunch-card"><b>Menu del giorno</b><span>Disponibilità da confermare in base alla produzione.</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="catering">
-  <div class="wrap catering-grid">
-    <div>
-      <div class="eyebrow">Service Traiteur</div>
-      <h2>Catering professionale per ogni occasione.</h2>
-      <p style="margin-top:18px;color:var(--muted)">Matrimoni, compleanni, battesimi, eventi aziendali, festival e ricevimenti: costruiamo il formato in base al tuo evento.</p>
-      <div class="offer-list">
-        <div class="offer"><b>Buffet completo</b><span>Piatti, accompagnamenti, finger food e bevande.</span></div>
-        <div class="offer"><b>Plateaux repas</b><span>Soluzione pratica per aziende, riunioni e formazioni.</span></div>
-        <div class="offer"><b>Cocktail & petits fours</b><span>Mini-bouchées e assortimenti per aperitivi e reception.</span></div>
-        <div class="offer"><b>Menu personalizzato</b><span>Una proposta costruita intorno a ospiti, orari e stile dell’evento.</span></div>
+    <div class="split">
+      <div class="split-copy">
+        <div class="eyebrow">Traiteur senegalese</div>
+        <h2>Catering & Eventi</h2>
+        <p>Un servizio pensato per accompagnare i vostri momenti con qualità, generosità e autenticità. Costruiamo menu, quantità e formato in base all’occasione.</p>
+        <div class="icons">
+          <div class="mini"><b>♡</b>Matrimoni e celebrazioni</div>
+          <div class="mini"><b>◉</b>Eventi privati</div>
+          <div class="mini"><b>▦</b>Eventi aziendali</div>
+        </div>
+        <a class="btn primary" href="#contact">Parliamo del tuo evento</a>
       </div>
-      <div style="margin-top:24px"><a class="btn primary" href="#contatti">Richiedi un preventivo</a></div>
+      <div class="split-image"><img src="assets/event.webp?v=7" alt="Buffet catering YRA’EAT"></div>
     </div>
-    <div class="catering-visual"><img src="assets/event.webp?v=6" alt="Buffet catering YRA’EAT per eventi"><div class="inside"><div class="eyebrow" style="color:var(--g)">Teranga in ogni dettaglio</div><b>Una tavola che accoglie.</b><span>Calore africano, presentazione contemporanea, servizio curato.</span></div></div>
   </div>
 </section>
 
-<section class="founders" id="chi-siamo">
-  <div class="wrap founder-grid">
-    <div class="logo-panel"><img src="assets/logo-originale-yraeat.webp?v=6" alt="Logo ufficiale YRA’EAT"></div>
-    <div>
+<section class="aperitif" id="events">
+  <div class="wrap aperitif-split">
+    <div class="aperitif-photo"><img src="assets/aperitifs.webp?v=7" alt="Fataya, Beignets e Nems"></div>
+    <div class="aperitif-copy">
+      <div class="eyebrow">Aperitivi & finger food</div>
+      <h2>Fataya, Beignets & Nems</h2>
+      <p>Assortimenti perfetti per cocktail, ricevimenti, feste e buffet. Facili da condividere, generosi e subito riconoscibili.</p>
+      <div class="checks"><span>Sapori autentici</span><span>Ideali per buffet e reception</span><span>Quantità personalizzate</span></div>
+      <a class="btn primary" href="#contact">Richiedi informazioni</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
       <div class="eyebrow">La nostra storia</div>
-      <h2>Yaye • Rama • Anta</h2>
-      <p style="margin-top:18px;color:var(--muted)">YRA nasce dalle iniziali delle tre fondatrici. Una visione comune: raccontare il Senegal attraverso cibo, ospitalità, catering ed eventi con un’immagine moderna e riconoscibile.</p>
-      <div class="names"><div class="name"><b>Y</b>Yaye</div><div class="name"><b>R</b>Rama</div><div class="name"><b>A</b>Anta</div></div>
+      <h2>Tre donne. Una visione. Una tavola.</h2>
+      <p>YRA nasce dalle iniziali di Yaye, Rama e Anta. YRA’EAT unisce cucina, ospitalità e identità senegalese in un progetto contemporaneo dedicato al food, al catering e agli eventi.</p>
+      <div class="quote">“La Teranga non è solo ciò che serviamo: è il modo in cui accogliamo.”</div>
     </div>
+    <div class="logo-panel"><img src="assets/logo-originale-yraeat.webp?v=7" alt="Logo ufficiale YRA’EAT"></div>
   </div>
 </section>
 
-<section class="events">
-  <div class="wrap">
-    <div class="eyebrow">Interveniamo per</div>
-    <h2>Eventi grandi e piccoli.</h2>
-    <div class="event-grid">
-      <div class="event"><b>Matrimoni</b><span>Buffet, tavole e servizio.</span></div>
-      <div class="event"><b>Compleanni</b><span>Finger food e formule conviviali.</span></div>
-      <div class="event"><b>Battesimi</b><span>Una proposta calda e familiare.</span></div>
-      <div class="event"><b>Aziende</b><span>Lunch, meeting, cocktail e networking.</span></div>
-      <div class="event"><b>Festival & Pop-up</b><span>Food, cultura e comunità.</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="cta" id="contatti">
-  <div class="wrap cta-grid">
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
     <div>
-      <div class="eyebrow" style="color:var(--g)">Contatti</div>
-      <h2>Parliamo del tuo evento.</h2>
-      <p>Scrivici data, numero di ospiti, luogo e tipo di servizio. Inseriremo qui WhatsApp, Instagram ed email ufficiali appena definiti.</p>
+      <div class="eyebrow" style="color:var(--g)">Prenotazioni & contatti</div>
+      <h2>Parliamo del tuo progetto.</h2>
+      <p>Indica data, luogo, numero di ospiti e tipo di evento. Ti prepareremo una proposta su misura.</p>
     </div>
-    <a class="btn light" href="#contatti">Richiedi informazioni</a>
+    <div class="contact-card">
+      <input placeholder="Nome e cognome">
+      <input type="email" placeholder="Email">
+      <input placeholder="Telefono">
+      <select><option>Tipo di evento</option><option>Matrimonio</option><option>Compleanno</option><option>Battesimo</option><option>Evento aziendale</option><option>Altro</option></select>
+      <textarea placeholder="Raccontaci il tuo evento..."></textarea>
+      <button class="btn primary" type="button">Invia la richiesta</button>
+    </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div><img class="footer-logo" src="assets/logo-originale-yraeat.webp?v=6" alt="YRA’EAT"><p>Food • Catering • Events</p><p>Tre donne. Una visione. Una tavola.</p></div>
-      <div><h4>Esplora</h4><p><a href="#prodotti">Prodotti</a></p><p><a href="#menu">Menu</a></p><p><a href="#catering">Catering</a></p></div>
-      <div><h4>Identità</h4><p>Senegal</p><p>Africa occidentale</p><p>Teranga</p></div>
-    </div>
-    <div class="note">YRA’EAT — Food • Catering • Events. Immagini selezionate per la presentazione del progetto.</div>
+  <div class="wrap footer-row">
+    <div class="footer-brand"><img src="assets/logo-originale-yraeat.webp?v=7" alt="YRA’EAT"><span>FOOD • CATERING • EVENTS</span></div>
+    <small>YRA’EAT — Yaye • Rama • Anta</small>
   </div>
 </footer>
-<a class="mobile-cta" href="#contatti">Richiedi un preventivo</a>
+<a class="mobile-cta" href="#contact">Richiedi un preventivo</a>
 </body>
 </html>
