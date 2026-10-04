@@ -6,7 +6,7 @@
 <title>YRA’EAT — Food • Catering • Events</title>
 <meta name="description" content="YRA’EAT: cucina senegalese e dell’Africa occidentale, catering ed eventi. Fataya, Nems, Bissap, Ginger, Thieboudienne e formule su misura.">
 <meta name="theme-color" content="#BF0F1E">
-<link rel="icon" type="image/webp" href="assets/logo-originale-yraeat.webp?v=4">
+<link rel="icon" type="image/webp" href="assets/logo-originale-yraeat.webp?v=6">
 <style>
 :root{
   --b:#BF0F1E;--b2:#8D0A15;--r:#DD1324;--g:#E7B307;--y:#FFC300;
@@ -72,7 +72,7 @@ section{padding:96px 0}
 .category p{color:var(--muted);font-size:.91rem}
 
 /* platters */
-.platters{background:#17110f;color:#fff}
+.platters{background:#17110f;color:#fff}.platters-photo{height:390px;border-radius:28px;overflow:hidden;margin-bottom:24px;box-shadow:0 24px 60px rgba(0,0,0,.28)}.platters-photo img{width:100%;height:100%;object-fit:cover}
 .platter-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 .platter{border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:26px;background:linear-gradient(145deg,rgba(191,15,30,.13),rgba(231,179,7,.05))}
 .platter h3{font-size:1.6rem;color:var(--g);margin:0 0 12px}
@@ -99,9 +99,9 @@ section{padding:96px 0}
 
 /* catering */
 .catering-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:52px;align-items:center}
-.catering-visual{min-height:500px;border-radius:32px;position:relative;overflow:hidden;background:linear-gradient(145deg,#3b160f,#130a08);box-shadow:var(--shadow)}
-.catering-visual:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,rgba(231,179,7,.22),transparent 28%),linear-gradient(150deg,rgba(191,15,30,.24),transparent 50%)}
-.catering-visual .inside{position:absolute;left:28px;right:28px;bottom:28px;color:#fff}
+.catering-visual{min-height:500px;border-radius:32px;position:relative;overflow:hidden;background:#1b0d0a;box-shadow:var(--shadow)}.catering-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.catering-visual:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.05) 25%,rgba(0,0,0,.72) 100%)}
+.catering-visual .inside{position:absolute;z-index:2;left:28px;right:28px;bottom:28px;color:#fff}
 .catering-visual b{display:block;color:var(--g);font:700 2.7rem Georgia,serif;line-height:1}
 .offer-list{display:grid;gap:12px;margin-top:25px}
 .offer{padding:17px 0;border-bottom:1px solid var(--line)}
@@ -160,7 +160,7 @@ footer h4{font-family:Georgia,serif;margin:0 0 10px}
 <header>
   <nav class="wrap">
     <a class="brand" href="#home">
-      <img src="assets/logo-originale-yraeat.webp?v=4" alt="Logo YRA’EAT">
+      <img src="assets/logo-originale-yraeat.webp?v=6" alt="Logo YRA’EAT">
       <span class="brand-text"><strong>YRA’EAT</strong><small>FOOD • CATERING • EVENTS</small></span>
     </a>
     <div class="navlinks">
@@ -178,7 +178,7 @@ footer h4{font-family:Georgia,serif;margin:0 0 10px}
 
 <main>
 <section class="hero" id="home">
-  <img class="hero-bg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Senegalese_Thieboudienne.JPG/1280px-Senegalese_Thieboudienne.JPG" alt="Thieboudienne senegalese">
+  <img class="hero-bg" src="assets/thieboudienne.webp?v=6" alt="Thieboudienne senegalese">
   <div class="wrap hero-inner">
     <div class="hero-copy">
       <div class="eyebrow" style="color:var(--g)">Benvenuti da YRA’EAT</div>
@@ -224,7 +224,7 @@ footer h4{font-family:Georgia,serif;margin:0 0 10px}
       <div><div class="eyebrow" style="color:var(--g)">I nostri plateaux salati</div><h2>Combinazioni pensate per condividere.</h2></div>
       <p>Qui non mostriamo prezzi: ogni plateau può essere adattato al numero di ospiti e al tipo di evento.</p>
     </div>
-    <div class="platter-grid">
+    <div class="platters-photo"><img src="assets/aperitifs.webp?v=6" alt="Assortimento YRA’EAT di Fataya, Beignets e Nems"></div><div class="platter-grid">
       <article class="platter"><h3>Plateau Teranga</h3><ul><li>Fataya</li><li>Nems</li><li>Beignets salati</li><li>Brochettes di pollo</li><li>Salse di accompagnamento</li></ul><div class="small">Composizione personalizzabile</div></article>
       <article class="platter"><h3>Plateau Dakar</h3><ul><li>Pastels di pesce</li><li>Nems</li><li>Fataya</li><li>Mini brochettes</li><li>Finger food del giorno</li></ul><div class="small">Composizione personalizzabile</div></article>
       <article class="platter"><h3>Plateau YRA</h3><ul><li>Assortimento di Fataya</li><li>Nems</li><li>Beignets</li><li>Brochettes</li><li>Bissap o Ginger su richiesta</li></ul><div class="small">Ideale per feste e ricevimenti</div></article>
@@ -240,10 +240,10 @@ footer h4{font-family:Georgia,serif;margin:0 0 10px}
       <p>Una selezione breve e chiara, pensata per far conoscere subito la nostra identità gastronomica.</p>
     </div>
     <div class="products">
-      <article class="product"><div class="product-media"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Fataya.jpg" alt="Fataya"></div><div class="product-copy"><h3>Fataya</h3><p>Finger food dorato, perfetto per aperitivi e buffet.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
-      <article class="product"><div class="product-media"><div style="height:100%;display:grid;place-items:center;font-size:4rem;background:#28140f">🥟</div></div><div class="product-copy"><h3>Nems</h3><p>Croccanti, conviviali e facili da servire durante gli eventi.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
-      <article class="product"><div class="product-media"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Fataya_et_b%C3%A9gn%C3%A9_fait_Maison.jpg" alt="Beignets"></div><div class="product-copy"><h3>Beignets</h3><p>Per buffet, coffee break e momenti di condivisione.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
-      <article class="product"><div class="product-media"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jus_de_bouye%2C_gingembre_et_bissap_04.jpg" alt="Bissap"></div><div class="product-copy"><h3>Bissap & Ginger</h3><p>Bevande naturali che completano l’esperienza YRA’EAT.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
+      <article class="product"><div class="product-media"><img src="assets/maffe.webp?v=6" alt="Maffé senegalese"></div><div class="product-copy"><h3>Maffé</h3><p>Carne e verdure in una salsa ricca alle arachidi, servita con riso.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
+      <article class="product"><div class="product-media"><img src="assets/thiebou-guinar.webp?v=6" alt="Thiebou Guinar"></div><div class="product-copy"><h3>Thiebou Guinar</h3><p>Riso con pollo, verdure, olive e uova: questa è la foto corretta scelta da YRA’EAT.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
+      <article class="product"><div class="product-media"><img src="assets/thieboudienne.webp?v=6" alt="Thieboudienne"></div><div class="product-copy"><h3>Thieboudienne</h3><p>Riso, pesce e verdure: uno dei grandi piatti della tavola senegalese.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
+      <article class="product"><div class="product-media"><img src="assets/yassa.webp?v=6" alt="Yassa Poulet"></div><div class="product-copy"><h3>Yassa Poulet</h3><p>Pollo marinato con cipolle e olive, accompagnato da riso.</p><a class="product-link" href="#contatti">Richiedi info</a></div></article>
     </div>
   </div>
 </section>
@@ -253,11 +253,11 @@ footer h4{font-family:Georgia,serif;margin:0 0 10px}
     <div class="eyebrow">Menu pranzo</div>
     <h2>I grandi classici del Senegal.</h2>
     <div class="lunch-grid">
-      <div class="lunch-card"><b>Thieboudienne</b><span>Riso, pesce e verdure in stile senegalese.</span></div>
-      <div class="lunch-card"><b>Yassa Poulet</b><span>Pollo marinato con cipolla e agrumi.</span></div>
-      <div class="lunch-card"><b>Mafé</b><span>Una proposta ricca e avvolgente per la tavola.</span></div>
+      <div class="lunch-card"><img src="assets/thieboudienne.webp?v=6" alt="Thieboudienne"><div class="lunch-copy"><b>Thieboudienne</b><span>Riso, pesce e verdure.</span></div></div>
+      <div class="lunch-card"><img src="assets/yassa.webp?v=6" alt="Yassa Poulet"><div class="lunch-copy"><b>Yassa Poulet</b><span>Pollo marinato con cipolle e olive, servito con riso.</span></div></div>
+      <div class="lunch-card"><img src="assets/maffe.webp?v=6" alt="Maffé"><div class="lunch-copy"><b>Maffé</b><span>Salsa alle arachidi, carne e verdure con riso.</span></div></div>
       <div class="lunch-card"><b>Thiebou Yapp</b><span>Riso e carne per un pasto generoso.</span></div>
-      <div class="lunch-card"><img src="assets/thiebou-guinar.webp?v=1" alt="Thiebou Guinar con pollo, riso, verdure, olive e uova"><div class="lunch-copy"><b>Thiebou Guinar</b><span>Riso e pollo con verdure, olive e uova.</span></div></div>
+      <div class="lunch-card"><img src="assets/thiebou-guinar.webp?v=6" alt="Thiebou Guinar con pollo, riso, verdure, olive e uova"><div class="lunch-copy"><b>Thiebou Guinar</b><span>Riso e pollo con verdure, olive e uova.</span></div></div>
       <div class="lunch-card"><b>Menu del giorno</b><span>Disponibilità da confermare in base alla produzione.</span></div>
     </div>
   </div>
@@ -277,13 +277,13 @@ footer h4{font-family:Georgia,serif;margin:0 0 10px}
       </div>
       <div style="margin-top:24px"><a class="btn primary" href="#contatti">Richiedi un preventivo</a></div>
     </div>
-    <div class="catering-visual"><div class="inside"><div class="eyebrow" style="color:var(--g)">Teranga in ogni dettaglio</div><b>Una tavola che accoglie.</b><span>Calore africano, presentazione contemporanea, servizio curato.</span></div></div>
+    <div class="catering-visual"><img src="assets/event.webp?v=6" alt="Buffet catering YRA’EAT per eventi"><div class="inside"><div class="eyebrow" style="color:var(--g)">Teranga in ogni dettaglio</div><b>Una tavola che accoglie.</b><span>Calore africano, presentazione contemporanea, servizio curato.</span></div></div>
   </div>
 </section>
 
 <section class="founders" id="chi-siamo">
   <div class="wrap founder-grid">
-    <div class="logo-panel"><img src="assets/logo-originale-yraeat.webp?v=4" alt="Logo ufficiale YRA’EAT"></div>
+    <div class="logo-panel"><img src="assets/logo-originale-yraeat.webp?v=6" alt="Logo ufficiale YRA’EAT"></div>
     <div>
       <div class="eyebrow">La nostra storia</div>
       <h2>Yaye • Rama • Anta</h2>
@@ -322,11 +322,11 @@ footer h4{font-family:Georgia,serif;margin:0 0 10px}
 <footer>
   <div class="wrap">
     <div class="footer-grid">
-      <div><img class="footer-logo" src="assets/logo-originale-yraeat.webp?v=4" alt="YRA’EAT"><p>Food • Catering • Events</p><p>Tre donne. Una visione. Una tavola.</p></div>
+      <div><img class="footer-logo" src="assets/logo-originale-yraeat.webp?v=6" alt="YRA’EAT"><p>Food • Catering • Events</p><p>Tre donne. Una visione. Una tavola.</p></div>
       <div><h4>Esplora</h4><p><a href="#prodotti">Prodotti</a></p><p><a href="#menu">Menu</a></p><p><a href="#catering">Catering</a></p></div>
       <div><h4>Identità</h4><p>Senegal</p><p>Africa occidentale</p><p>Teranga</p></div>
     </div>
-    <div class="note">YRA’EAT — sito in sviluppo. Le immagini food dimostrative verranno progressivamente sostituite con fotografie originali del brand.</div>
+    <div class="note">YRA’EAT — Food • Catering • Events. Immagini selezionate per la presentazione del progetto.</div>
   </div>
 </footer>
 <a class="mobile-cta" href="#contatti">Richiedi un preventivo</a>
