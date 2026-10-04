@@ -2,39 +2,277 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>YRA’EAT — Food • Catering • Events</title>
-<meta name="description" content="Cucina senegalese e dell’Africa occidentale, catering ed eventi. Tre donne, una visione, una tavola.">
+<meta name="description" content="YRA’EAT: cucina senegalese e dell’Africa occidentale, catering ed eventi. Tre donne, una visione, una tavola.">
 <meta name="theme-color" content="#BF0F1E">
 <style>
-:root{--b:#BF0F1E;--g:#E7B307;--y:#FFC300;--cream:#F9F9F9;--ink:#16110f;--muted:#6c605a;--line:#eadfd4;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}.serif{font-family:Georgia,"Times New Roman",serif}.eyebrow{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--b)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;border:1px solid var(--ink);font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.btn.primary{background:var(--b);border-color:var(--b);color:#fff}
-header{position:sticky;top:0;z-index:20;background:rgba(249,249,249,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06)}nav{height:76px;display:flex;align-items:center;gap:26px}.brand{display:flex;align-items:center;margin-right:auto}.brandmark{font:700 1.7rem Georgia,serif;letter-spacing:-.04em}.brandmark .yra{color:var(--b)}.brandmark .eat{color:#111}.brand small{display:block;font-size:.62rem;letter-spacing:.16em;margin-top:-3px}.navlinks{display:flex;gap:22px;font-size:.84rem;font-weight:700}
-.hero{padding:64px 0 78px;background:linear-gradient(#fff,var(--cream))}.hero-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:52px;align-items:center}.hero h1{font:700 clamp(3rem,7vw,6.3rem)/.92 Georgia,serif;letter-spacing:-.04em;margin:12px 0 20px}.hero h1 span{color:var(--b)}.lead{font:400 clamp(1.25rem,2vw,1.8rem) Georgia,serif;margin:0 0 16px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-photo{position:relative;border-radius:34px;overflow:hidden;box-shadow:0 30px 70px rgba(55,23,12,.16);min-height:520px;background:#21100d}.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,10,8,.20),transparent 48%)}.badge{position:absolute;left:22px;bottom:22px;z-index:2;background:rgba(249,249,249,.94);border-radius:18px;padding:15px 18px;max-width:285px;box-shadow:0 12px 30px rgba(0,0,0,.12)}.badge b{display:block;color:var(--b);font:700 1.05rem Georgia,serif}
-.pattern{height:22px;background:linear-gradient(135deg,var(--b) 25%,transparent 25%) 0 0/22px 22px,linear-gradient(225deg,var(--g) 25%,transparent 25%) 0 0/22px 22px,#25100e}
-.features{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:-18px;position:relative;z-index:3;border:1px solid var(--line);background:var(--line)}.feature{background:#fff;padding:23px}.feature strong{display:block;color:var(--b);font:700 1.05rem Georgia,serif;margin-bottom:4px}.feature span{font-size:.88rem;color:var(--muted)}
-section{padding:94px 0}.head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:34px}h2{font:700 clamp(2.2rem,5vw,4rem)/1 Georgia,serif;letter-spacing:-.025em;margin:8px 0 0}.head p{max-width:560px;color:var(--muted)}
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;min-height:230px;position:relative;overflow:hidden}.service:after{content:"";position:absolute;width:120px;height:120px;border:18px solid rgba(231,179,7,.10);border-radius:50%;right:-48px;bottom:-48px}.service .n{font:700 3.8rem Georgia,serif;color:rgba(191,15,30,.10)}.service h3{font:700 1.35rem Georgia,serif;margin:4px 0 8px}.service p{color:var(--muted);font-size:.92rem}
-.dark{background:#18110f;color:#fff}.dark p{color:#dbcfc7}.food-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.dish{padding:24px;border:1px solid rgba(255,255,255,.12);border-radius:22px;background:linear-gradient(145deg,rgba(191,15,30,.12),rgba(231,179,7,.06))}.dish b{color:var(--g);font:700 1.3rem Georgia,serif}.dish small{display:block;color:#bcaea6;margin-top:8px}
-.founders{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center}.founder-art{min-height:430px;border-radius:34px;border:1px solid var(--line);background:radial-gradient(circle at 50% 35%,rgba(231,179,7,.16),transparent 30%),linear-gradient(135deg,#fff,#f5ece4);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.founder-art .three{font:700 10rem Georgia,serif;color:var(--b);line-height:1}.founder-art:before,.founder-art:after{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(191,15,30,.14);border-radius:50%}.founder-art:before{left:-90px;top:-50px}.founder-art:after{right:-95px;bottom:-60px}.names{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.name{padding:18px;background:#fff;border:1px solid var(--line);border-radius:18px;text-align:center}.name b{display:block;color:var(--b);font:700 1.25rem Georgia,serif}
+:root{
+  --b:#BF0F1E;--b2:#8e0914;--r:#DD1324;--g:#E7B307;--y:#FFC300;
+  --cream:#FBF7F2;--paper:#fff;--ink:#17110f;--muted:#6c5f59;--line:#eadfd5;
+  --max:1180px;--shadow:0 24px 65px rgba(62,27,18,.14)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--max),calc(100% - 38px));margin:auto}
+.serif,h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+.eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--b)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:14px 20px;border-radius:999px;border:1px solid var(--ink);font-size:.76rem;font-weight:800;letter-spacing:.055em;text-transform:uppercase;transition:.2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--b);border-color:var(--b);color:#fff}
+.btn.light{border-color:#fff;color:#fff}
+header{position:sticky;top:0;z-index:50;background:rgba(251,247,242,.95);backdrop-filter:blur(13px);border-bottom:1px solid rgba(0,0,0,.06)}
+nav{height:80px;display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;margin-right:auto}
+.brand img{width:66px;height:58px;object-fit:cover;object-position:center 38%;border-radius:12px}
+.brand-copy strong{display:block;font:700 1.35rem Georgia,serif;letter-spacing:-.03em;color:var(--b)}
+.brand-copy small{display:block;font-size:.58rem;letter-spacing:.16em;margin-top:-2px}
+.navlinks{display:flex;gap:20px;font-size:.82rem;font-weight:700}
+.navlinks a:hover{color:var(--b)}
+.menu-btn{display:none;background:none;border:0;font-size:1.5rem}
+.pattern{height:18px;background:
+linear-gradient(135deg,var(--b) 25%,transparent 25%) 0 0/18px 18px,
+linear-gradient(225deg,var(--g) 25%,transparent 25%) 0 0/18px 18px,
+#24110f}
+.hero{padding:54px 0 70px;background:linear-gradient(#fff,var(--cream))}
+.hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(3.3rem,7vw,6.6rem);line-height:.9;letter-spacing:-.05em;margin:11px 0 18px}
+.hero h1 .yra{color:var(--b)}.hero h1 .eat{color:#111;font-weight:500}
+.hero .lead{font:400 clamp(1.35rem,2vw,1.95rem) Georgia,serif;margin:0 0 17px}
+.hero p{max-width:610px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-meta{display:flex;gap:17px;flex-wrap:wrap;margin-top:36px;font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--g);display:inline-block;margin-right:7px}
+.hero-photo{position:relative;min-height:565px;overflow:hidden;border-radius:36px;box-shadow:var(--shadow);background:#28120e}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,10,8,.22),transparent 45%)}
+.logo-seal{position:absolute;right:20px;top:20px;z-index:3;width:135px;background:rgba(255,255,255,.94);padding:8px;border-radius:22px;box-shadow:0 10px 28px rgba(0,0,0,.12)}
+.logo-seal img{position:static;width:100%;height:auto;object-fit:contain;border-radius:15px}
+.hero-note{position:absolute;left:22px;bottom:22px;z-index:3;background:rgba(255,255,255,.94);padding:16px 18px;border-radius:18px;max-width:305px;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.hero-note b{display:block;font:700 1.08rem Georgia,serif;color:var(--b);margin-bottom:3px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:-18px;position:relative;z-index:4;border:1px solid var(--line);background:var(--line);border-radius:22px;overflow:hidden;box-shadow:0 15px 35px rgba(60,28,18,.08)}
+.feature{background:#fff;padding:22px}.feature strong{display:block;color:var(--b);font:700 1.05rem Georgia,serif;margin-bottom:4px}.feature span{font-size:.87rem;color:var(--muted)}
+section{padding:94px 0}
+.head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:36px}
+h2{font-size:clamp(2.15rem,5vw,4rem);line-height:1;letter-spacing:-.03em;margin:7px 0 0}
+.head p{max-width:560px;color:var(--muted)}
+.visual-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;gap:16px}
+.photo-card{position:relative;min-height:330px;border-radius:26px;overflow:hidden;background:#24130f;box-shadow:0 14px 35px rgba(48,20,14,.12)}
+.photo-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,8,7,.78),rgba(15,8,7,0) 60%)}
+.photo-card .caption{position:absolute;left:22px;right:22px;bottom:20px;z-index:2;color:#fff}
+.photo-card .caption b{display:block;font:700 1.55rem Georgia,serif}.photo-card .caption span{font-size:.86rem;color:#efe2da}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.service{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;min-height:230px;position:relative;overflow:hidden}
+.service:after{content:"";position:absolute;width:118px;height:118px;border:18px solid rgba(231,179,7,.10);border-radius:50%;right:-46px;bottom:-46px}
+.service .n{font:700 3.5rem Georgia,serif;color:rgba(191,15,30,.10)}.service h3{font-size:1.35rem;margin:4px 0 8px}.service p{color:var(--muted);font-size:.92rem}
+.dark{background:#17110f;color:#fff}.dark .sub{color:#d7cac2;max-width:720px}
+.food-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.dish{border:1px solid rgba(255,255,255,.13);border-radius:24px;overflow:hidden;background:linear-gradient(145deg,rgba(191,15,30,.13),rgba(231,179,7,.06))}
+.dish-media{height:230px;background:#2b1812;overflow:hidden}.dish-media img{width:100%;height:100%;object-fit:cover}
+.dish-copy{padding:20px}.dish b{color:var(--g);font:700 1.3rem Georgia,serif}.dish small{display:block;color:#c4b6ae;margin-top:7px}
+.founders{display:grid;grid-template-columns:.86fr 1.14fr;gap:50px;align-items:center}
+.founder-logo{background:#fff;border:1px solid var(--line);border-radius:34px;padding:28px;box-shadow:0 20px 45px rgba(56,24,16,.08)}
+.founder-logo img{width:100%;border-radius:20px}
+.names{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.name{padding:18px;background:#fff;border:1px solid var(--line);border-radius:18px;text-align:center}.name b{display:block;color:var(--b);font:700 1.25rem Georgia,serif}
 .events{background:#efe7dd}.event-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px}.event{background:var(--cream);padding:22px 18px;border-radius:18px;border-top:4px solid var(--b)}.event b{display:block;font-family:Georgia,serif;margin-bottom:6px}.event span{font-size:.86rem;color:var(--muted)}
-.teranga{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.word{font:700 clamp(3.2rem,8vw,7rem)/.85 Georgia,serif;color:var(--g);letter-spacing:-.04em}
-.cta{background:var(--b);color:#fff;padding:72px 0}.cta-grid{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.cta p{color:#f0dde0}.cta .btn{border-color:#fff;color:#fff}
-footer{background:#0f0c0b;color:#fff;padding:48px 0}.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:30px}footer p{color:#cdbfb7;font-size:.88rem}footer h4{font-family:Georgia,serif;margin:0 0 10px}.note{margin-top:30px;padding-top:18px;border-top:1px solid #3c302b;color:#8d7e77;font-size:.75rem}
-@media(max-width:900px){.navlinks{display:none}.hero-grid,.founders,.teranga,.cta-grid{grid-template-columns:1fr}.hero-photo{min-height:450px}.features{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr 1fr}.event-grid{grid-template-columns:1fr 1fr}.food-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}}@media(max-width:600px){nav .btn{display:none}.hero{padding-top:36px}.hero-photo{min-height:370px}.features,.services,.event-grid,.food-grid,.names{grid-template-columns:1fr}section{padding:70px 0}.head{display:block}.head p{margin-top:15px}}
-</style></head>
+.teranga{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.word{font:700 clamp(3.2rem,8vw,7rem)/.85 Georgia,serif;color:var(--g);letter-spacing:-.05em}
+.cta{background:linear-gradient(120deg,var(--b2),var(--b));color:#fff;padding:76px 0;position:relative;overflow:hidden}.cta:after{content:"";position:absolute;right:-80px;top:-120px;width:330px;height:330px;border:40px solid rgba(255,195,0,.12);border-radius:50%}.cta-grid{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;position:relative;z-index:2}.cta p{color:#f3dfe1}
+.contact-box{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.contact-pill{border:1px solid rgba(255,255,255,.28);border-radius:15px;padding:13px 15px;font-size:.86rem}
+footer{background:#0f0c0b;color:#fff;padding:48px 0}.footer-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;gap:30px}footer p{color:#cdbfb7;font-size:.88rem}footer h4{font-family:Georgia,serif;margin:0 0 10px}.footer-logo{width:135px;background:#fff;border-radius:16px;padding:5px;margin-bottom:12px}.credits{margin-top:30px;padding-top:18px;border-top:1px solid #392f2a;color:#96877f;font-size:.72rem}
+.mobile-bar{display:none}
+@media(max-width:950px){
+  .navlinks{display:none}.menu-btn{display:block}.hero-grid,.founders,.teranga,.cta-grid{grid-template-columns:1fr}.hero-photo{min-height:500px}
+  .features{grid-template-columns:1fr 1fr}.visual-grid{grid-template-columns:1fr 1fr}.visual-grid .photo-card:first-child{grid-column:1/-1}
+  .services{grid-template-columns:1fr 1fr}.event-grid{grid-template-columns:1fr 1fr}.food-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .wrap{width:min(var(--max),calc(100% - 26px))}nav{height:70px}.brand img{width:54px;height:48px}.brand-copy strong{font-size:1.12rem}.brand-copy small{font-size:.51rem}nav>.btn{display:none}
+  .hero{padding-top:32px}.hero-photo{min-height:390px}.logo-seal{width:95px;right:12px;top:12px}.hero-note{left:12px;right:12px;bottom:12px;max-width:none}
+  .features,.visual-grid,.services,.food-grid,.event-grid,.names,.contact-box{grid-template-columns:1fr}.visual-grid .photo-card:first-child{grid-column:auto}.photo-card{min-height:300px}
+  section{padding:70px 0}.head{display:block}.head p{margin-top:14px}.mobile-bar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:var(--b);color:#fff;border-radius:999px;padding:14px 18px;justify-content:center;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;box-shadow:0 15px 35px rgba(0,0,0,.22)}
+}
+</style>
+</head>
 <body>
-<header><nav class="wrap"><a class="brand" href="#home"><div><div class="brandmark"><span class="yra">YRA’</span><span class="eat">EAT</span></div><small>FOOD • CATERING • EVENTS</small></div></a><div class="navlinks"><a href="#chi-siamo">Chi siamo</a><a href="#food">Food</a><a href="#catering">Catering</a><a href="#eventi">Events</a><a href="#teranga">Teranga</a><a href="#contatti">Contatti</a></div><a class="btn primary" href="#contatti">Richiedi un preventivo</a></nav></header>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home">
+      <img src="assets/logo.webp" alt="Logo YRA’EAT">
+      <span class="brand-copy"><strong>YRA’EAT</strong><small>FOOD • CATERING • EVENTS</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="#chi-siamo">Chi siamo</a><a href="#food">Food</a><a href="#catering">Catering</a><a href="#eventi">Events</a><a href="#teranga">Teranga</a><a href="#contatti">Contatti</a>
+    </div>
+    <a class="btn primary" href="#contatti">Richiedi un preventivo</a>
+  </nav>
+</header>
 <div class="pattern"></div>
+
 <main id="home">
-<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Cucina senegalese • Africa occidentale</div><h1><span>YRA’</span>EAT</h1><p class="lead">Più di un pasto, una storia di Teranga.</p><p>Food, catering ed eventi con il calore della cucina senegalese, la forza di tre fondatrici e una cura contemporanea per ogni dettaglio.</p><div class="actions"><a class="btn primary" href="#food">Scopri i nostri sapori</a><a class="btn" href="#contatti">Parliamo del tuo evento</a></div></div><div class="hero-photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Senegalese_Thieboudienne.JPG/1280px-Senegalese_Thieboudienne.JPG" alt="Thiéboudienne senegalese"><div class="badge"><b>Tre donne. Una visione. Una tavola.</b><span>Yaye • Rama • Anta</span></div></div></div></section>
-<div class="wrap features"><div class="feature"><strong>Cucina autentica</strong><span>Sapori del Senegal e dell’Africa occidentale.</span></div><div class="feature"><strong>Catering su misura</strong><span>Buffet, finger food e servizio per ogni occasione.</span></div><div class="feature"><strong>Eventi memorabili</strong><span>Privati, aziendali, culturali e pop-up.</span></div><div class="feature"><strong>Teranga</strong><span>Ospitalità, condivisione e comunità.</span></div></div>
-<section id="catering"><div class="wrap"><div class="head"><div><div class="eyebrow">Il mondo YRA’EAT</div><h2>Food, catering, eventi.</h2></div><p>Una proposta pensata per essere bella da vedere, generosa da condividere e professionale nel servizio.</p></div><div class="services"><article class="service"><div class="n">01</div><h3>Food</h3><p>Piatti, finger food e degustazioni ispirati alla cucina senegalese.</p></article><article class="service"><div class="n">02</div><h3>Catering</h3><p>Buffet eleganti, ricevimenti e formule adattate al tuo evento.</p></article><article class="service"><div class="n">03</div><h3>Events</h3><p>Una tavola capace di creare atmosfera, relazione e memoria.</p></article><article class="service"><div class="n">04</div><h3>Bevande</h3><p>Bissap e Ginger: due firme fresche e riconoscibili per buffet e aperitivi.</p></article></div></div></section>
-<section class="dark" id="food"><div class="wrap"><div class="eyebrow" style="color:var(--g)">Sapori signature</div><h2>Dal Senegal alla tua tavola.</h2><p style="max-width:720px;margin-top:16px">La carta crescerà con le vostre ricette e le fotografie reali YRA’EAT. Per ora il sito presenta i prodotti già definiti come identitari.</p><div class="food-grid"><div class="dish"><b>Fataya</b><small>Finger food dorato, ideale per aperitivi e buffet.</small></div><div class="dish"><b>Nems</b><small>Croccanti, facili da condividere e perfetti per eventi.</small></div><div class="dish"><b>Beignets</b><small>Dolci morbidi per coffee break e fine evento.</small></div><div class="dish"><b>Ceebu Jën</b><small>Un grande classico senegalese, pensato per la condivisione.</small></div><div class="dish"><b>Bissap</b><small>Rosso rubino, fresco e intenso.</small></div><div class="dish"><b>Ginger</b><small>Speziato, profumato e rinfrescante.</small></div></div></div></section>
-<section id="chi-siamo"><div class="wrap founders"><div class="founder-art"><div class="three">3</div></div><div><div class="eyebrow">Le fondatrici</div><h2>Tre donne, una visione.</h2><p style="margin-top:20px">YRA nasce dalle iniziali di Yaye, Rama e Anta. Tre percorsi che si incontrano attorno alla stessa idea: raccontare il Senegal attraverso cucina, ospitalità, catering ed eventi contemporanei.</p><div class="names"><div class="name"><b>Y</b>Yaye</div><div class="name"><b>R</b>Rama</div><div class="name"><b>A</b>Anta</div></div></div></div></section>
-<section class="events" id="eventi"><div class="wrap"><div class="eyebrow">Per ogni occasione</div><h2>Il formato giusto per il tuo momento.</h2><div class="event-grid"><div class="event"><b>Matrimoni</b><span>Buffet, tavole e servizio su misura.</span></div><div class="event"><b>Battesimi</b><span>Accoglienza calda e familiare.</span></div><div class="event"><b>Compleanni</b><span>Finger food, bevande e piatti condivisi.</span></div><div class="event"><b>Eventi aziendali</b><span>Lunch, cocktail, team event e degustazioni.</span></div><div class="event"><b>Festival & Pop-up</b><span>Una presenza riconoscibile e contemporanea.</span></div></div></div></section>
-<section id="teranga"><div class="wrap teranga"><div><div class="eyebrow">Il nostro modo di accogliere</div><h2>Più di un servizio. Un’esperienza di condivisione.</h2><p style="margin-top:18px">Per YRA’EAT l’evento inizia dal modo in cui si accoglie, si serve e si crea relazione intorno alla tavola.</p></div><div class="word">TERANGA</div></div></section>
-<section class="cta" id="contatti"><div class="wrap cta-grid"><div><div class="eyebrow" style="color:var(--g)">Il tuo evento</div><h2>Raccontaci cosa vuoi creare.</h2><p style="margin-top:12px">Data, numero di ospiti, tipo di evento e stile del servizio: da qui costruiamo la proposta YRA’EAT.</p></div><a class="btn" href="mailto:contatti@yraeat.it">Contattaci</a></div></section>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Senegal • Africa occidentale • Teranga</div>
+      <h1><span class="yra">YRA’</span><span class="eat">EAT</span></h1>
+      <p class="lead">Più di un pasto, una storia da condividere.</p>
+      <p>YRA’EAT porta in tavola cucina senegalese, catering ed eventi con una direzione contemporanea: sapori autentici, servizio curato e l’ospitalità della Teranga.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#food">Scopri i sapori</a>
+        <a class="btn" href="#contatti">Parliamo del tuo evento</a>
+      </div>
+      <div class="hero-meta">
+        <span><i class="dot"></i>Food</span><span><i class="dot"></i>Catering</span><span><i class="dot"></i>Events</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Senegalese_Thieboudienne.JPG/1280px-Senegalese_Thieboudienne.JPG" alt="Piatto senegalese Thiéboudienne">
+      <div class="logo-seal"><img src="assets/logo.webp" alt=""></div>
+      <div class="hero-note"><b>Tre donne. Una visione. Una tavola.</b><span>Yaye • Rama • Anta</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap features">
+  <div class="feature"><strong>Cucina autentica</strong><span>Senegal e Africa occidentale.</span></div>
+  <div class="feature"><strong>Catering su misura</strong><span>Buffet, finger food e servizio.</span></div>
+  <div class="feature"><strong>Eventi memorabili</strong><span>Privati, aziendali e culturali.</span></div>
+  <div class="feature"><strong>Teranga</strong><span>Accoglienza, condivisione, comunità.</span></div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Immagini e sapori</div><h2>Un’identità africana contemporanea.</h2></div>
+      <p>La V2 introduce fotografie di cucina senegalese reale, il logo definitivo e un linguaggio visivo più caldo, elegante e riconoscibile.</p>
+    </div>
+    <div class="visual-grid">
+      <article class="photo-card">
+        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Fataya.jpg" alt="Fataya senegalesi">
+        <div class="caption"><b>Fataya</b><span>Finger food senegalese per buffet e aperitivi.</span></div>
+      </article>
+      <article class="photo-card">
+        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jus_de_bouye%2C_gingembre_et_bissap_04.jpg" alt="Bevande locali senegalesi">
+        <div class="caption"><b>Bissap</b><span>Una firma fresca e riconoscibile.</span></div>
+      </article>
+      <article class="photo-card">
+        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jus_de_gingembre-2025.jpg" alt="Jus de gingembre">
+        <div class="caption"><b>Ginger</b><span>Speziato, profumato, rinfrescante.</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="catering">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Il mondo YRA’EAT</div><h2>Food, catering, eventi.</h2></div>
+      <p>Una proposta pensata per essere generosa da condividere, elegante da vedere e professionale nel servizio.</p>
+    </div>
+    <div class="services">
+      <article class="service"><div class="n">01</div><h3>Food</h3><p>Piatti, finger food e degustazioni ispirati alla cucina senegalese.</p></article>
+      <article class="service"><div class="n">02</div><h3>Catering</h3><p>Buffet eleganti, ricevimenti e formule adattate al tuo evento.</p></article>
+      <article class="service"><div class="n">03</div><h3>Events</h3><p>Una tavola che crea atmosfera, relazione e memoria.</p></article>
+      <article class="service"><div class="n">04</div><h3>Bevande</h3><p>Bissap e Ginger per aperitivi, buffet e momenti di accoglienza.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="food">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--g)">Sapori signature</div>
+    <h2>Dal Senegal alla tua tavola.</h2>
+    <p class="sub" style="margin-top:16px">Una selezione che crescerà con le ricette e le fotografie originali YRA’EAT.</p>
+    <div class="food-grid">
+      <article class="dish">
+        <div class="dish-media"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Fataya_et_b%C3%A9gn%C3%A9_fait_Maison.jpg" alt="Fataya e beignets"></div>
+        <div class="dish-copy"><b>Fataya & Beignets</b><small>Per aperitivi, buffet, coffee break e condivisione.</small></div>
+      </article>
+      <article class="dish">
+        <div class="dish-media"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Senegalese_Thieboudienne.JPG/1280px-Senegalese_Thieboudienne.JPG" alt="Thiéboudienne senegalese"></div>
+        <div class="dish-copy"><b>Ceebu Jën</b><small>Un grande classico senegalese, pensato per la tavola condivisa.</small></div>
+      </article>
+      <article class="dish">
+        <div class="dish-media"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jus_de_bouye%2C_gingembre_et_bissap_04.jpg" alt="Bissap e altre bevande senegalesi"></div>
+        <div class="dish-copy"><b>Bissap & Ginger</b><small>Due bevande che rendono riconoscibile il servizio YRA’EAT.</small></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="chi-siamo">
+  <div class="wrap founders">
+    <div class="founder-logo"><img src="assets/logo.webp" alt="Logo YRA’EAT con donna africana e porta cibo"></div>
+    <div>
+      <div class="eyebrow">Le fondatrici</div>
+      <h2>Tre donne, una visione.</h2>
+      <p style="margin-top:20px">YRA nasce dalle iniziali di Yaye, Rama e Anta. Tre percorsi che si incontrano attorno alla stessa idea: raccontare il Senegal attraverso cucina, ospitalità, catering ed eventi contemporanei.</p>
+      <div class="names">
+        <div class="name"><b>Y</b>Yaye</div><div class="name"><b>R</b>Rama</div><div class="name"><b>A</b>Anta</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="events" id="eventi">
+  <div class="wrap">
+    <div class="eyebrow">Per ogni occasione</div>
+    <h2>Il formato giusto per il tuo momento.</h2>
+    <div class="event-grid">
+      <div class="event"><b>Matrimoni</b><span>Buffet, tavole e servizio su misura.</span></div>
+      <div class="event"><b>Battesimi</b><span>Accoglienza calda e familiare.</span></div>
+      <div class="event"><b>Compleanni</b><span>Finger food, bevande e piatti condivisi.</span></div>
+      <div class="event"><b>Eventi aziendali</b><span>Lunch, cocktail e degustazioni.</span></div>
+      <div class="event"><b>Festival & Pop-up</b><span>Una presenza riconoscibile e contemporanea.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="teranga">
+  <div class="wrap teranga">
+    <div>
+      <div class="eyebrow">Il nostro modo di accogliere</div>
+      <h2>Più di un servizio. Un’esperienza di condivisione.</h2>
+      <p style="margin-top:18px">Per YRA’EAT l’evento inizia dal modo in cui si accoglie, si presenta, si serve e si crea relazione intorno alla tavola.</p>
+    </div>
+    <div class="word">TERANGA</div>
+  </div>
+</section>
+
+<section class="cta" id="contatti">
+  <div class="wrap cta-grid">
+    <div>
+      <div class="eyebrow" style="color:var(--g)">Il tuo evento</div>
+      <h2>Raccontaci cosa vuoi creare.</h2>
+      <p style="margin-top:12px">Data, numero di ospiti, tipo di evento e stile del servizio: da qui costruiremo la proposta YRA’EAT.</p>
+      <div class="contact-box">
+        <div class="contact-pill">WhatsApp — da inserire</div>
+        <div class="contact-pill">Instagram — da inserire</div>
+        <div class="contact-pill">Email — da inserire</div>
+      </div>
+    </div>
+    <a class="btn light" href="#contatti">Contatti in arrivo</a>
+  </div>
+</section>
 </main>
-<footer><div class="wrap"><div class="footer-grid"><div><h3 class="serif" style="color:var(--g);font-size:1.7rem">YRA’EAT</h3><p>Food • Catering • Events</p><p>Yaye • Rama • Anta</p></div><div><h4>Esplora</h4><p><a href="#food">Food</a></p><p><a href="#catering">Catering</a></p><p><a href="#eventi">Events</a></p></div><div><h4>Contatti</h4><p>WhatsApp: da inserire</p><p>Instagram: da inserire</p><p>Email: da inserire</p></div></div><div class="note">Demo YRA’EAT. Foto Thiéboudienne: Mariel.cg, Wikimedia Commons, CC BY-SA 4.0. Prima della pubblicazione definitiva inseriremo logo grafico, contatti e fotografie originali YRA’EAT.</div></div></footer>
-</body></html>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo.webp" alt="YRA’EAT">
+        <p>Food • Catering • Events</p><p>Yaye • Rama • Anta</p>
+      </div>
+      <div><h4>Esplora</h4><p><a href="#food">Food</a></p><p><a href="#catering">Catering</a></p><p><a href="#eventi">Events</a></p></div>
+      <div><h4>Identità</h4><p>Senegal</p><p>Africa occidentale</p><p>Teranga</p></div>
+    </div>
+    <div class="credits">
+      Demo YRA’EAT. Foto food di prova da Wikimedia Commons: Thiéboudienne (Mariel.cg), Fataya (Cheikh cherif), Fataya e beignets (Kalsoum17), Jus de gingembre (Cheikh cherif), Jus de bouye/gingembre/bissap (Kalamuh 045). Le foto definitive saranno sostituite con contenuti originali YRA’EAT.
+    </div>
+  </div>
+</footer>
+
+<a class="mobile-bar" href="#contatti">Richiedi un preventivo</a>
+</body>
+</html>
