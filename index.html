@@ -1,149 +1,196 @@
 <!doctype html>
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>YRA’EAT — Food • Catering • Events</title>
-<meta name="description" content="YRA’EAT porta la cucina senegalese negli eventi: piatti signature, aperitivi, catering e Teranga.">
-<meta name="theme-color" content="#BF0F1E">
-<link rel="icon" type="image/webp" href="assets/logo-originale-yraeat.webp?v=7">
-<style>
-:root{--b:#A90D1A;--b2:#720812;--g:#E7B307;--ink:#17110F;--cream:#FFF9F2;--paper:#fff;--muted:#6F625B;--line:#EADFD6;--max:1180px;--shadow:0 22px 55px rgba(46,18,12,.13)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}.serif,h1,h2,h3{font-family:Georgia,"Times New Roman",serif}.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase;color:var(--b)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:8px;font-size:.77rem;font-weight:800;letter-spacing:.04em;border:1px solid transparent;text-transform:uppercase;transition:.2s}.btn:hover{transform:translateY(-1px)}.btn.primary{background:var(--b);color:#fff}.btn.outline{border-color:rgba(255,255,255,.75);color:#fff;background:rgba(0,0,0,.05)}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #eee}nav{height:82px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:10px;margin-right:auto}.brand img{width:88px;height:64px;object-fit:contain}.brand strong{font:700 1.25rem Georgia,serif;color:var(--b);display:block}.brand small{font-size:.52rem;letter-spacing:.13em}.navlinks{display:flex;gap:22px;font-weight:700;font-size:.82rem}.navlinks a:hover{color:var(--b)}
-.hero{position:relative;min-height:710px;color:#fff;display:flex;align-items:center;overflow:hidden;background:#140c09}.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.90) 0%,rgba(0,0,0,.76) 40%,rgba(0,0,0,.28) 72%,rgba(0,0,0,.10) 100%)}.hero-inner{position:relative;z-index:2}.hero-copy{max-width:700px;padding:80px 0}.hero h1{font-size:clamp(3.6rem,7vw,6.6rem);line-height:.92;letter-spacing:-.045em;margin:12px 0 20px}.hero h1 span{color:var(--g)}.hero .lead{font:400 clamp(1.25rem,2vw,1.8rem) Georgia,serif;max-width:650px;color:#f6eee8}.hero p{max-width:600px;color:#eaded6}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-proof{display:flex;gap:24px;flex-wrap:wrap;margin-top:42px;font-size:.78rem;font-weight:700}.hero-proof span:before{content:"✦";color:var(--g);margin-right:8px}
-section{padding:92px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 38px}.section-head h2{font-size:clamp(2.3rem,5vw,4rem);line-height:1;letter-spacing:-.03em;margin:8px 0 12px}.section-head h2 span{color:var(--b)}.section-head p{color:var(--muted)}
-.signature{background:#fff}.dish-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.dish{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 28px rgba(38,15,10,.07)}.dish-media{height:245px;overflow:hidden;background:#27130f}.dish-media img{width:100%;height:100%;object-fit:cover}.dish-copy{padding:18px 18px 20px}.dish-copy h3{font-size:1.25rem;color:var(--b);margin:0 0 7px}.dish-copy p{font-size:.88rem;color:var(--muted)}
-.catering{background:linear-gradient(90deg,#fff 0%,#fff 45%,#f9f1e8 45%,#f9f1e8 100%)}.split{display:grid;grid-template-columns:.9fr 1.1fr;align-items:stretch;min-height:510px;box-shadow:var(--shadow);border-radius:24px;overflow:hidden;background:#fff}.split-copy{padding:56px}.split-copy h2{font-size:clamp(2.5rem,4.5vw,4rem);line-height:1;margin:9px 0 16px}.split-copy p{color:var(--muted)}.icons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}.mini{font-size:.83rem}.mini b{display:block;color:var(--b);font-size:1.1rem;margin-bottom:4px}.split-image{min-height:510px}.split-image img{width:100%;height:100%;object-fit:cover}
-.aperitif{background:#fff}.aperitif-split{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:54px}.aperitif-photo{border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}.aperitif-photo img{width:100%;height:500px;object-fit:cover}.aperitif-copy h2{font-size:clamp(2.4rem,4.5vw,3.9rem);line-height:1;margin:8px 0 16px}.aperitif-copy p{color:var(--muted)}.checks{display:grid;gap:11px;margin:24px 0}.checks span:before{content:"✓";color:var(--g);font-weight:900;margin-right:10px}
-.about{background:#F5EEE7}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}.about-copy h2{font-size:clamp(2.4rem,4.5vw,3.9rem);line-height:1;margin:8px 0 16px}.about-copy p{color:var(--muted)}.quote{margin-top:25px;padding-left:18px;border-left:4px solid var(--g);font:italic 1.2rem Georgia,serif}.logo-panel{background:#fff;border-radius:24px;padding:36px;box-shadow:var(--shadow)}.logo-panel img{width:100%;max-width:430px;margin:auto;object-fit:contain}
-.contact{background:linear-gradient(120deg,#57070C,#A90D1A);color:#fff}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start}.contact h2{font-size:clamp(2.5rem,5vw,4rem);line-height:1;margin:8px 0 14px}.contact p{color:#f2dfe1}.contact-card{background:#fff;color:var(--ink);padding:24px;border-radius:18px}.contact-card input,.contact-card textarea,.contact-card select{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:8px;margin-bottom:12px;font:inherit}.contact-card textarea{min-height:115px}.contact-card button{width:100%;border:0;cursor:pointer}
-footer{background:#0E0B0A;color:#fff;padding:38px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand img{width:100px;background:#fff;border-radius:10px;padding:4px}.footer-row small{color:#a99c95}.mobile-cta{display:none}
-@media(max-width:950px){.navlinks{display:none}.dish-grid{grid-template-columns:1fr 1fr}.split,.aperitif-split,.about-grid,.contact-grid{grid-template-columns:1fr}.catering{background:#fff}.split-image{min-height:380px}.aperitif-photo img{height:390px}.split-copy{padding:38px}}
-@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 24px))}nav{height:70px}.brand img{width:64px;height:48px}.brand strong{font-size:1.05rem}.brand small{font-size:.46rem}nav>.btn{display:none}.hero{min-height:650px}.hero>img{object-position:62% center}.hero-copy{padding:58px 0}.hero h1{font-size:3.5rem}.dish-grid{grid-template-columns:1fr}.dish-media{height:260px}.icons{grid-template-columns:1fr}.split-copy{padding:30px 24px}.aperitif-photo img{height:320px}.mobile-cta{display:flex;position:fixed;bottom:12px;left:12px;right:12px;z-index:70;background:var(--b);color:#fff;padding:14px 18px;border-radius:999px;justify-content:center;font-weight:800;text-transform:uppercase;font-size:.78rem;box-shadow:0 15px 35px rgba(0,0,0,.25)}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>YRA’EAT — Cucina senegalese, catering ed eventi</title>
+  <meta name="description" content="Il Senegal alla tua tavola. YRA’EAT porta la cucina senegalese, il catering su misura e il calore della Teranga nei tuoi eventi.">
+  <meta name="theme-color" content="#FFF7EC">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YRA’EAT — Il Senegal alla tua tavola">
+  <meta property="og:description" content="Sapori autentici, piatti da condividere e il calore della Teranga. Cucina senegalese, catering ed eventi su misura.">
+  <link rel="icon" href="assets/logo-originale-yraeat.webp" type="image/webp">
+  <link rel="preload" href="assets/cucina-illustrativa.png" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"YRA’EAT","description":"Cucina senegalese, catering ed eventi","email":"yraeat@gmail.com","telephone":"3717450081","sameAs":["https://www.instagram.com/yra_eat/","https://www.tiktok.com/@yraeat","https://www.facebook.com/profile.php?id=61594975693535"]}
+  </script>
 </head>
 <body>
-<header>
-  <nav class="wrap">
-    <a class="brand" href="#home">
-      <img src="assets/logo-originale-yraeat.webp?v=7" alt="YRA’EAT">
-      <span><strong>YRA’EAT</strong><small>FOOD • CATERING • EVENTS</small></span>
-    </a>
-    <div class="navlinks">
-      <a href="#menu">Menu</a>
-      <a href="#catering">Catering</a>
-      <a href="#events">Events</a>
-      <a href="#about">Chi siamo</a>
-      <a href="#contact">Contatti</a>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="YRA’EAT — Torna all’inizio">
+        <img src="assets/logo-originale-yraeat.webp" width="72" height="72" alt="">
+        <span class="brand-wordmark"><strong>YRA’EAT</strong><small>Food · Catering · Events</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navigazione principale">
+        <a href="#menu">La cucina</a>
+        <a href="#catering">Catering</a>
+        <a href="#about">La nostra storia</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+      <a class="button button-primary header-cta" href="#contact">Parliamo del tuo evento <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false">
+        <span>Menu</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-    <a class="btn primary" href="#contact">Richiedi un preventivo</a>
-  </nav>
-</header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigazione mobile" hidden>
+      <a href="#menu">La cucina</a><a href="#catering">Catering</a><a href="#events">Aperitivi</a><a href="#about">La nostra storia</a><a href="#contact">Contatti e preventivi</a>
+    </nav>
+  </header>
 
-<main>
-<section class="hero" id="home">
-  <img src="assets/thieboudienne.webp?v=7" alt="Thieboudienne senegalese">
-  <div class="wrap hero-inner">
-    <div class="hero-copy">
-      <div class="eyebrow" style="color:var(--g)">Cucina senegalese • Catering • Events</div>
-      <h1>Sapori senegalesi <span>per i tuoi eventi.</span></h1>
-      <p class="lead">Piatti generosi, autentici e curati per trasformare ogni tavola in un’esperienza.</p>
-      <p>YRA’EAT porta la Teranga in matrimoni, compleanni, battesimi, eventi aziendali, festival e momenti privati.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#menu">Scopri il menu</a>
-        <a class="btn outline" href="#contact">Richiedi un preventivo</a>
-      </div>
-      <div class="hero-proof"><span>Cucina autentica</span><span>Servizio su misura</span><span>Per ogni occasione</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="signature" id="menu">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">I nostri piatti signature</div>
-      <h2>Il Senegal <span>in tavola.</span></h2>
-      <p>Quattro piatti che raccontano la nostra cucina. Nessun prezzo fisso: ogni proposta viene adattata all’evento e al numero di ospiti.</p>
-    </div>
-    <div class="dish-grid">
-      <article class="dish"><div class="dish-media"><img src="assets/maffe.webp?v=7" alt="Maffé"></div><div class="dish-copy"><h3>Maffé</h3><p>Carne e verdure in una salsa ricca alle arachidi, servita con riso.</p></div></article>
-      <article class="dish"><div class="dish-media"><img src="assets/thiebou-guinar.webp?v=7" alt="Thiebou Guinar"></div><div class="dish-copy"><h3>Thiebou Guinar</h3><p>Riso speziato con pollo, verdure, olive e uova.</p></div></article>
-      <article class="dish"><div class="dish-media"><img src="assets/thieboudienne.webp?v=7" alt="Thieboudienne"></div><div class="dish-copy"><h3>Thieboudienne</h3><p>Riso, pesce e verdure: un grande classico della tavola senegalese.</p></div></article>
-      <article class="dish"><div class="dish-media"><img src="assets/yassa.webp?v=7" alt="Yassa Poulet"></div><div class="dish-copy"><h3>Yassa Poulet</h3><p>Pollo marinato con cipolle e olive, accompagnato da riso.</p></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="catering" id="catering">
-  <div class="wrap">
-    <div class="split">
-      <div class="split-copy">
-        <div class="eyebrow">Traiteur senegalese</div>
-        <h2>Catering & Eventi</h2>
-        <p>Un servizio pensato per accompagnare i vostri momenti con qualità, generosità e autenticità. Costruiamo menu, quantità e formato in base all’occasione.</p>
-        <div class="icons">
-          <div class="mini"><b>♡</b>Matrimoni e celebrazioni</div>
-          <div class="mini"><b>◉</b>Eventi privati</div>
-          <div class="mini"><b>▦</b>Eventi aziendali</div>
+  <main id="contenuto" tabindex="-1">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Cucina senegalese · Catering · Eventi</p>
+          <h1 id="hero-title">Il Senegal<br><em>alla tua tavola.</em></h1>
+          <p class="hero-intro">Sapori autentici, piatti da condividere e il calore della Teranga. Portiamo la nostra cucina nei tuoi momenti speciali.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Parliamo del tuo evento <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            <a class="button button-secondary" href="#menu">Scopri i piatti <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6"/></svg></a>
+          </div>
+          <p class="hero-note">Cucina autentica. Ospitalità da condividere.</p>
         </div>
-        <a class="btn primary" href="#contact">Parliamo del tuo evento</a>
+        <div class="hero-visual">
+          <div class="food-photo food-thieboudienne" role="img" aria-label="Immagine illustrativa di Thieboudienne: riso, pesce e verdure"></div>
+          <span class="hero-seal">Il gusto<br>della Teranga</span>
+          <p class="photo-label">Immagine illustrativa del piatto</p>
+        </div>
       </div>
-      <div class="split-image"><img src="assets/event.webp?v=7" alt="Buffet catering YRA’EAT"></div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="aperitif" id="events">
-  <div class="wrap aperitif-split">
-    <div class="aperitif-photo"><img src="assets/aperitifs.webp?v=7" alt="Fataya, Beignets e Nems"></div>
-    <div class="aperitif-copy">
-      <div class="eyebrow">Aperitivi & finger food</div>
-      <h2>Fataya, Beignets & Nems</h2>
-      <p>Assortimenti perfetti per cocktail, ricevimenti, feste e buffet. Facili da condividere, generosi e subito riconoscibili.</p>
-      <div class="checks"><span>Sapori autentici</span><span>Ideali per buffet e reception</span><span>Quantità personalizzate</span></div>
-      <a class="btn primary" href="#contact">Richiedi informazioni</a>
+    <div class="welcome-strip">
+      <div class="container welcome-inner"><span>Il piacere di accogliere</span><span>La gioia di condividere</span><span>Una tavola, tante storie</span></div>
     </div>
-  </div>
-</section>
 
-<section class="about" id="about">
-  <div class="wrap about-grid">
-    <div class="about-copy">
-      <div class="eyebrow">La nostra storia</div>
-      <h2>Tre donne. Una visione. Una tavola.</h2>
-      <p>YRA nasce dalle iniziali di Yaye, Rama e Anta. YRA’EAT unisce cucina, ospitalità e identità senegalese in un progetto contemporaneo dedicato al food, al catering e agli eventi.</p>
-      <div class="quote">“La Teranga non è solo ciò che serviamo: è il modo in cui accogliamo.”</div>
-    </div>
-    <div class="logo-panel"><img src="assets/logo-originale-yraeat.webp?v=7" alt="Logo ufficiale YRA’EAT"></div>
-  </div>
-</section>
+    <section class="section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">La nostra cucina</p><h2 id="menu-title">I sapori di <em>YRA’EAT.</em></h2></div>
+          <p class="section-intro">Quattro piatti che raccontano il Senegal. Ingredienti generosi, ricette della tradizione e il piacere di stare insieme.</p>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card">
+            <div class="dish-image food-photo food-thieboudienne" role="img" aria-label="Immagine illustrativa di Thieboudienne"></div>
+            <div class="dish-content"><span class="dish-index">01 · Il grande classico</span><h3>Thieboudienne</h3><p>Riso, pesce e verdure: un piatto simbolo della cucina senegalese.</p></div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-image food-photo food-maffe" role="img" aria-label="Immagine illustrativa di Maffé"></div>
+            <div class="dish-content"><span class="dish-index">02 · Ricco e avvolgente</span><h3>Maffé</h3><p>Carne e verdure in una salsa alle arachidi, accompagnate da riso.</p></div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-image food-photo food-yassa" role="img" aria-label="Immagine illustrativa di Yassa Poulet"></div>
+            <div class="dish-content"><span class="dish-index">03 · Profumato e generoso</span><h3>Yassa Poulet</h3><p>Pollo marinato, cipolle e olive. Sapori intensi, serviti con riso.</p></div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-image food-photo food-guinar" role="img" aria-label="Immagine illustrativa di Thiebou Guinar"></div>
+            <div class="dish-content"><span class="dish-index">04 · Tutto da condividere</span><h3>Thiebou Guinar</h3><p>Riso speziato con pollo, verdure, olive e uova.</p></div>
+          </article>
+        </div>
+        <p class="menu-note">Menu e quantità sono personalizzati per il tuo evento. Le immagini dei piatti sono illustrative.</p>
+      </div>
+    </section>
 
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div>
-      <div class="eyebrow" style="color:var(--g)">Prenotazioni & contatti</div>
-      <h2>Parliamo del tuo progetto.</h2>
-      <p>Indica data, luogo, numero di ospiti e tipo di evento. Ti prepareremo una proposta su misura.</p>
-    </div>
-    <div class="contact-card">
-      <input placeholder="Nome e cognome">
-      <input type="email" placeholder="Email">
-      <input placeholder="Telefono">
-      <select><option>Tipo di evento</option><option>Matrimonio</option><option>Compleanno</option><option>Battesimo</option><option>Evento aziendale</option><option>Altro</option></select>
-      <textarea placeholder="Raccontaci il tuo evento..."></textarea>
-      <button class="btn primary" type="button">Invia la richiesta</button>
-    </div>
-  </div>
-</section>
-</main>
+    <section class="section section-tinted" id="catering" aria-labelledby="catering-title">
+      <div class="container split-grid">
+        <div class="catering-copy">
+          <p class="eyebrow">Catering & eventi</p>
+          <h2 id="catering-title">Una tavola<br>per ogni <em>occasione.</em></h2>
+          <p>Ogni festa ha la sua storia. La nostra cucina la accompagna con un menu pensato per l’occasione, il numero di ospiti e il piacere di condividere.</p>
+          <div class="occasion-list">
+            <div><span class="occasion-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="15" cy="23" r="10"/><circle cx="27" cy="23" r="10"/><path d="m11 8 4-4 4 4-4 4-4-4Z"/></svg></span><h3>Matrimoni</h3><p>Per il vostro giorno speciale.</p></div>
+            <div><span class="occasion-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m20 5 3 10 10 3-10 3-3 10-3-10-10-3 10-3 3-10Z"/><path d="M32 4v8m-4-4h8M7 28v8m-4-4h8"/></svg></span><h3>Eventi privati</h3><p>Feste, compleanni e celebrazioni.</p></div>
+            <div><span class="occasion-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="13" width="30" height="21" rx="4"/><path d="M14 13V7h12v6M5 22h30M17 22v4h6v-4"/></svg></span><h3>Eventi aziendali</h3><p>Un incontro che si ricorda.</p></div>
+          </div>
+          <a class="button button-primary" href="#contact">Raccontaci la tua occasione <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+        </div>
+        <figure class="catering-photo">
+          <img src="assets/catering-illustrativo.png" width="1536" height="1024" loading="lazy" decoding="async" alt="Immagine illustrativa di una tavola con piatti e aperitivi della cucina senegalese">
+          <figcaption>Immagine illustrativa di una tavola senegalese</figcaption>
+        </figure>
+      </div>
+    </section>
 
-<footer>
-  <div class="wrap footer-row">
-    <div class="footer-brand"><img src="assets/logo-originale-yraeat.webp?v=7" alt="YRA’EAT"><span>FOOD • CATERING • EVENTS</span></div>
-    <small>YRA’EAT — Yaye • Rama • Anta</small>
-  </div>
-</footer>
-<a class="mobile-cta" href="#contact">Richiedi un preventivo</a>
+    <section class="section" id="events" aria-labelledby="aperitif-title">
+      <div class="container aperitif-panel">
+        <div class="aperitif-heading"><p class="eyebrow">Aperitivi & finger food</p><h2 id="aperitif-title">Piccoli assaggi.<br><em>Grandi momenti.</em></h2><p>Per aprire la festa, accompagnare un brindisi o arricchire il buffet. Assortimenti e quantità si adattano al tuo evento.</p><a class="button button-secondary" href="#contact">Scegliamo insieme il tuo assortimento <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div>
+        <div class="aperitif-items">
+          <article><span class="dish-index">01</span><h3>Fataya</h3><p>Un assaggio della tradizione, fatto per essere condiviso.</p></article>
+          <article><span class="dish-index">02</span><h3>Beignets</h3><p>Una proposta generosa per feste, cocktail e ricevimenti.</p></article>
+          <article><span class="dish-index">03</span><h3>Nems</h3><p>Piccoli bocconi che trovano posto in ogni buffet.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="about" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <div class="story-emblem"><img src="assets/logo-originale-yraeat.webp" width="256" height="256" loading="lazy" alt="Il logo YRA’EAT: una donna con copricapo bordeaux e dettagli oro"><p>Food · Catering · Events</p></div>
+        <div class="story-copy">
+          <p class="eyebrow">La nostra storia</p>
+          <h2 id="story-title">Tre donne.<br>Una tavola.<br><em>La Teranga.</em></h2>
+          <p>YRA nasce dalle iniziali di Yaye, Rama e Anta. Tre donne, una passione condivisa: portare la cucina e l’ospitalità senegalesi nei vostri momenti importanti.</p>
+          <p>Per noi la Teranga è il piacere di accogliere. È fare spazio, condividere un piatto e sentirsi insieme, anche quando ci si incontra per la prima volta.</p>
+          <div class="founder-names"><span>Yaye</span><span>Rama</span><span>Anta</span></div>
+          <blockquote>“La Teranga non è solo ciò che serviamo: è il modo in cui accogliamo.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Iniziamo da una conversazione</p>
+          <h2 id="contact-title">Parliamo del<br><em>tuo progetto.</em></h2>
+          <p>Una data, un’idea, un’occasione speciale. Raccontaci cosa stai immaginando: costruiremo insieme una proposta su misura.</p>
+          <dl class="contact-details">
+            <div><dt>Scrivici</dt><dd><a href="mailto:yraeat@gmail.com">yraeat@gmail.com <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></dd></div>
+            <div><dt>Chiamaci</dt><dd><a href="tel:3717450081">371 745 0081 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></dd></div>
+          </dl>
+          <div class="social-links" aria-label="I profili social di YRA’EAT">
+            <a href="https://www.instagram.com/yra_eat/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @yra_eat (si apre in una nuova scheda)">Instagram <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            <a href="https://www.tiktok.com/@yraeat" target="_blank" rel="noopener noreferrer" aria-label="TikTok @yraeat (si apre in una nuova scheda)">TikTok <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            <a href="https://www.facebook.com/profile.php?id=61594975693535" target="_blank" rel="noopener noreferrer" aria-label="Facebook (si apre in una nuova scheda)">Facebook <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quote-form" action="mailto:yraeat@gmail.com" method="post" enctype="text/plain">
+          <h3>Il tuo evento, in poche parole.</h3>
+          <p class="form-help">Prepara la tua richiesta: potrai verificarla e inviarla dalla tua app email. I campi con * sono obbligatori.</p>
+          <div class="form-grid">
+            <div class="form-field"><label for="quote-name">Nome e cognome *</label><input id="quote-name" name="name" type="text" autocomplete="name" maxlength="120" required></div>
+            <div class="form-field"><label for="quote-email">Email *</label><input id="quote-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+            <div class="form-field"><label for="quote-phone">Telefono</label><input id="quote-phone" name="phone" type="tel" autocomplete="tel" maxlength="40"></div>
+            <div class="form-field"><label for="quote-event">Tipo di evento *</label><select id="quote-event" name="event" required><option value="">Scegli un’occasione</option><option>Matrimonio</option><option>Compleanno</option><option>Battesimo</option><option>Evento aziendale</option><option>Evento privato</option><option>Altro</option></select></div>
+            <div class="form-field"><label for="quote-date">Data dell’evento</label><input id="quote-date" name="date" type="date"></div>
+            <div class="form-field"><label for="quote-guests">Numero di ospiti</label><input id="quote-guests" name="guests" type="number" min="1" step="1" inputmode="numeric"></div>
+            <div class="form-field form-field-full"><label for="quote-location">Città o luogo dell’evento *</label><input id="quote-location" name="location" type="text" autocomplete="address-level2" maxlength="200" required></div>
+            <div class="form-field form-field-full"><label for="quote-message">Raccontaci la tua idea</label><textarea id="quote-message" name="message" rows="4" maxlength="2000" placeholder="Il tipo di menu, l’occasione, quello che rende speciale il tuo evento…"></textarea></div>
+          </div>
+          <button class="button button-primary" type="submit">Prepara la richiesta <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite" hidden></p>
+          <div class="email-preview" id="email-preview" hidden>
+            <label for="email-draft">La tua richiesta</label>
+            <textarea id="email-draft" rows="10" readonly aria-describedby="email-preview-note"></textarea>
+            <div class="draft-actions"><a class="button button-primary" id="email-link" href="mailto:yraeat@gmail.com">Apri l’email <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><button class="button button-secondary" id="copy-request" type="button">Copia il messaggio</button></div>
+            <p class="form-help" id="email-preview-note">Controlla il messaggio e invialo dalla tua app email. Puoi anche copiarlo e scriverci direttamente a yraeat@gmail.com.</p>
+          </div>
+          <noscript><p class="form-help">Puoi scriverci direttamente a <a href="mailto:yraeat@gmail.com">yraeat@gmail.com</a> indicando data, luogo e numero di ospiti.</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a href="#home" aria-label="YRA’EAT — Torna all’inizio"><img src="assets/logo-originale-yraeat.webp" width="80" height="80" loading="lazy" alt=""></a><p>Il Senegal alla tua tavola.<br>Food · Catering · Events</p></div>
+      <nav class="footer-links" aria-label="Navigazione del piè di pagina"><a href="#menu">La cucina</a><a href="#catering">Catering</a><a href="#events">Aperitivi</a><a href="#about">La nostra storia</a></nav>
+      <div class="footer-contact"><a href="mailto:yraeat@gmail.com">yraeat@gmail.com</a><a href="tel:3717450081">371 745 0081</a><div class="social-links"><a href="https://www.instagram.com/yra_eat/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (si apre in una nuova scheda)">Instagram</a><a href="https://www.tiktok.com/@yraeat" target="_blank" rel="noopener noreferrer" aria-label="TikTok (si apre in una nuova scheda)">TikTok</a><a href="https://www.facebook.com/profile.php?id=61594975693535" target="_blank" rel="noopener noreferrer" aria-label="Facebook (si apre in una nuova scheda)">Facebook</a></div></div>
+    </div>
+    <div class="container footer-bottom"><span>YRA’EAT — Yaye · Rama · Anta</span><span>Il piacere di accogliere e condividere.</span></div>
+  </footer>
+  <div class="mobile-actions" aria-label="Contatta YRA’EAT"><a href="tel:3717450081">Chiama <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><a href="#contact">Il tuo evento <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div>
 </body>
 </html>
